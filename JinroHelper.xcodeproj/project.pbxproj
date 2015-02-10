@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3414AC1A84CDAE0041DE12 /* RoleSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3414AB1A84CDAE0041DE12 /* RoleSettingTableViewController.swift */; };
+		2A3414AF1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3414AD1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift */; };
+		2A3414B01A84D3FB0041DE12 /* RoleSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3414AE1A84D3FB0041DE12 /* RoleSettingTableViewCell.xib */; };
+		2A3414B31A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3414B11A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift */; };
+		2A3414B41A84F5DE0041DE12 /* RolePurchaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3414B21A84F5DE0041DE12 /* RolePurchaseTableViewCell.xib */; };
 		2A5491E51A5B7AAE0021D860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5491E41A5B7AAE0021D860 /* AppDelegate.swift */; };
 		2A5491E71A5B7AAE0021D860 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5491E61A5B7AAE0021D860 /* ViewController.swift */; };
 		2A5491EA1A5B7AAE0021D860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5491E81A5B7AAE0021D860 /* Main.storyboard */; };
@@ -26,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A3414AB1A84CDAE0041DE12 /* RoleSettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleSettingTableViewController.swift; sourceTree = "<group>"; };
+		2A3414AD1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleSettingTableViewCell.swift; sourceTree = "<group>"; };
+		2A3414AE1A84D3FB0041DE12 /* RoleSettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoleSettingTableViewCell.xib; sourceTree = "<group>"; };
+		2A3414B11A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RolePurchaseTableViewCell.swift; sourceTree = "<group>"; };
+		2A3414B21A84F5DE0041DE12 /* RolePurchaseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RolePurchaseTableViewCell.xib; sourceTree = "<group>"; };
 		2A5491DF1A5B7AAE0021D860 /* JinroHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JinroHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5491E31A5B7AAE0021D860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A5491E41A5B7AAE0021D860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +93,11 @@
 				2A5491EB1A5B7AAE0021D860 /* Images.xcassets */,
 				2A5491ED1A5B7AAE0021D860 /* LaunchScreen.xib */,
 				2A5491E21A5B7AAE0021D860 /* Supporting Files */,
+				2A3414AB1A84CDAE0041DE12 /* RoleSettingTableViewController.swift */,
+				2A3414AD1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift */,
+				2A3414AE1A84D3FB0041DE12 /* RoleSettingTableViewCell.xib */,
+				2A3414B11A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift */,
+				2A3414B21A84F5DE0041DE12 /* RolePurchaseTableViewCell.xib */,
 			);
 			path = JinroHelper;
 			sourceTree = "<group>";
@@ -192,9 +207,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A3414B01A84D3FB0041DE12 /* RoleSettingTableViewCell.xib in Resources */,
 				2A5491EA1A5B7AAE0021D860 /* Main.storyboard in Resources */,
 				2A5491EF1A5B7AAE0021D860 /* LaunchScreen.xib in Resources */,
 				2A5491EC1A5B7AAE0021D860 /* Images.xcassets in Resources */,
+				2A3414B41A84F5DE0041DE12 /* RolePurchaseTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A3414AF1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift in Sources */,
 				2A5491E71A5B7AAE0021D860 /* ViewController.swift in Sources */,
+				2A3414AC1A84CDAE0041DE12 /* RoleSettingTableViewController.swift in Sources */,
 				2A5491E51A5B7AAE0021D860 /* AppDelegate.swift in Sources */,
+				2A3414B31A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +425,7 @@
 				2A5492001A5B7AAE0021D860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A5492011A5B7AAE0021D860 /* Build configuration list for PBXNativeTarget "JinroHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +434,7 @@
 				2A5492031A5B7AAE0021D860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

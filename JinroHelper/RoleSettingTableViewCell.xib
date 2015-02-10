@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="RoleSettingTableViewCell" customModule="JinroHelper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3X-lo-Rdj">
+                        <rect key="frame" x="0.0" y="0.0" width="46" height="70"/>
+                        <color key="backgroundColor" red="0.055420650552880472" green="0.28665417695553486" blue="0.60108713624338628" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        <state key="normal" title="ー">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ld-iy-Lf4">
+                        <rect key="frame" x="274" y="0.0" width="46" height="70"/>
+                        <color key="backgroundColor" red="0.51254546957671954" green="0.0049395528244219524" blue="0.019773530848331181" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        <state key="normal" title="＋">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWb-8A-fob">
+                        <rect key="frame" x="212" y="8" width="54" height="54"/>
+                        <fontDescription key="fontDescription" name="GillSans-LightItalic" family="Gill Sans" pointSize="48"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="役職名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xck-hC-iJf">
+                        <rect key="frame" x="54" y="19" width="212" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="Xck-hC-iJf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="7PS-j0-JX4"/>
+                    <constraint firstItem="T3X-lo-Rdj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="7Q9-aQ-odU"/>
+                    <constraint firstItem="9ld-iy-Lf4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="D0m-ub-nsx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Xck-hC-iJf" secondAttribute="bottom" constant="11" id="LbY-1W-nzA"/>
+                    <constraint firstItem="T3X-lo-Rdj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="Txy-V9-bCh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9ld-iy-Lf4" secondAttribute="trailing" constant="-8" id="jKb-hX-EKD"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="T3X-lo-Rdj" secondAttribute="bottom" constant="-8.5" id="jdl-wG-axg"/>
+                    <constraint firstItem="9ld-iy-Lf4" firstAttribute="leading" secondItem="Xck-hC-iJf" secondAttribute="trailing" constant="8" id="lhP-Bb-4bd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9ld-iy-Lf4" secondAttribute="bottom" constant="-8.5" id="u66-X4-XIM"/>
+                    <constraint firstItem="Xck-hC-iJf" firstAttribute="leading" secondItem="T3X-lo-Rdj" secondAttribute="trailing" constant="8" id="xQw-Rl-wBa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="minusButton" destination="T3X-lo-Rdj" id="F5F-ui-LpF"/>
+                <outlet property="plusButton" destination="9ld-iy-Lf4" id="phB-0W-I7R"/>
+                <outlet property="roleLabel" destination="Xck-hC-iJf" id="HOT-iz-NgM"/>
+                <outlet property="roleNumberLabel" destination="BWb-8A-fob" id="ndX-Er-KFN"/>
+            </connections>
+            <point key="canvasLocation" x="353" y="370"/>
+        </tableViewCell>
+    </objects>
+</document>
