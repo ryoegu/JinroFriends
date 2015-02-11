@@ -7,15 +7,17 @@
 //
 
 import UIKit
+import CoreData
 
 class RoleSettingTableViewController: UITableViewController {
     @IBOutlet var roleTableView: UITableView!
-
-    var roleArray = [["占い師","1"],["霊媒師","0"],["狩人","0"],["恋人","0"],["村人","0"],["人狼","1"],["狂人","0"]]
-    
-
+    var roleArray = [[String]]()
+    var lastScrollOffset:CGPoint!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //roleArray = savedata.objectForKey("roleInfo") as? [String]
+        tableView.allowsSelection = false
+        
         let xib = UINib(nibName: "RoleSettingTableViewCell", bundle: nil)
         roleTableView.registerNib(xib,forCellReuseIdentifier:"Cell")
         // Uncomment the following line to preserve selection between presentations
@@ -23,6 +25,40 @@ class RoleSettingTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        tableView.backgroundColor = UIColor.blackColor()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        // CoreDataからデータを読み込んで配列memosに格納する
+        let appDel: AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let context: NSManagedObjectContext = appDel.managedObjectContext!
+        let request: NSFetchRequest = NSFetchRequest(entityName: "RoleData")
+        // 並び順をdateの、昇順としてみる
+        request.sortDescriptors = [NSSortDescriptor(key: "id", ascending: true)]
+        request.returnsObjectsAsFaults = false
+        var results = context.executeFetchRequest(request, error: nil) as [RoleData]!
+        for data in results {
+            let id = data.id            //ID
+            let team = data.team        //team（ゲームマスター：0, 村人陣営：1, 人狼陣営:2, 第三勢力：3）
+            let role = data.role        //役職名
+            let number = data.number    //人数
+            let type = data.type        //A,B,Cのタイプ
+            let valid = data.valid      //有効かどうか
+            
+            //if valid.boolValue {
+                roleArray.append([
+                    String(id.intValue),
+                    String(team.intValue),
+                    role,
+                    String(number.intValue),
+                    String(type.intValue)
+                    ])
+            //}
+        }
+        
+        // テーブル情報を更新する
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,47 +77,89 @@ class RoleSettingTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 2
+        return roleArray.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as RoleSettingTableViewCell
-        cell.roleLabel.text = roleArray[indexPath.row][0]
+        
+        cell.roleLabel!.text = roleArray[indexPath.row][2]
+        cell.roleNumberLabel!.text = roleArray[indexPath.row][3]
         cell.plusButton.addTarget(self, action: "plusMethod:event:", forControlEvents: .TouchUpInside)
         cell.minusButton.addTarget(self, action: "minusMethod:event:", forControlEvents: .TouchUpInside)
-        cell.roleNumberLabel.text = roleArray[indexPath.row][1]
         return cell
     }
     
     func plusMethod(sender:UIButton, event:UIEvent){
-        
         let touch:UITouch = event.allTouches()?.anyObject() as UITouch
         let point:CGPoint = touch.locationInView(roleTableView)
         let indexPath:NSIndexPath = roleTableView.indexPathForRowAtPoint(point)!
-        var roleNumber = roleArray[indexPath.row][1].toInt()!
-        roleNumber++
-        roleArray[indexPath.row][1]=String(roleNumber)
+        var roleNumber = roleArray[indexPath.row][3].toInt()!
+        
+        switch roleArray[indexPath.row][4] {
+        case "1":
+            if roleNumber == 0{
+                roleNumber++
+            }
+        case "2":
+            if roleNumber < 20 {
+                roleNumber++
+            }
+            break
+        case "3":
+            if roleNumber == 0{
+                roleNumber = 2
+            }
+            break
+        case "4":
+            if roleNumber < 3 {
+                roleNumber++
+            }
+        case "5":
+            if roleNumber < 2 {
+                roleNumber++
+            }
+            break
+        default:
+            break
+        }
+        
+        roleArray[indexPath.row][3]=String(roleNumber)
         NSLog("%@",roleArray)
-        roleTableView.reloadData()
-//        cell.roleNumberLabel.text = roleArray[indexPath.row][1]
+        tableView.reloadData()
         
     }
     func minusMethod(sender:UIButton, event:UIEvent){
         let touch:UITouch = event.allTouches()?.anyObject() as UITouch
         let point:CGPoint = touch.locationInView(roleTableView)
         let indexPath:NSIndexPath = roleTableView.indexPathForRowAtPoint(point)!
-        var roleNumber = roleArray[indexPath.row][1].toInt()!
-        if roleNumber > 0{
-            roleNumber--
+        var roleNumber = roleArray[indexPath.row][3].toInt()!
+        
+        
+        switch roleArray[indexPath.row][4] {
+            case "1","2","5":
+                if roleNumber > 0 {
+                    roleNumber--
+            }
+            case "3":
+                if roleNumber == 2 {
+                    roleNumber = 0
+                }
+                break
+            case "4":
+                if roleNumber > 1 {
+                    roleNumber--
+                }
+                break
+            default:
+                break
         }
-        roleArray[indexPath.row][1]=String(roleNumber)
+        
+        roleArray[indexPath.row][3]=String(roleNumber)
         NSLog("%@",roleArray)
-        roleTableView.reloadData()
-//        cell.roleNumberLabel.text = roleArray[indexPath.row][1]
-
+        tableView.reloadData()
     }
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -126,5 +204,7 @@ class RoleSettingTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+
 
 }

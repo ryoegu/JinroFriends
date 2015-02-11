@@ -18,6 +18,10 @@
 		2A5491EC1A5B7AAE0021D860 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5491EB1A5B7AAE0021D860 /* Images.xcassets */; };
 		2A5491EF1A5B7AAE0021D860 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A5491ED1A5B7AAE0021D860 /* LaunchScreen.xib */; };
 		2A5491FB1A5B7AAE0021D860 /* JinroHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5491FA1A5B7AAE0021D860 /* JinroHelperTests.swift */; };
+		2A708AAB1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A708AAA1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift */; };
+		2A708AE21A8B0CF9003B1085 /* JinroHelper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A708AE01A8B0CF9003B1085 /* JinroHelper.xcdatamodeld */; };
+		2A708AE41A8B0E20003B1085 /* RoleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A708AE31A8B0E20003B1085 /* RoleData.swift */; };
+		2A708AE61A8B103E003B1085 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A708AE51A8B103E003B1085 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		2A5491F41A5B7AAE0021D860 /* JinroHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JinroHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5491F91A5B7AAE0021D860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A5491FA1A5B7AAE0021D860 /* JinroHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JinroHelperTests.swift; sourceTree = "<group>"; };
+		2A708AAA1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RolePurchaseTableViewController.swift; sourceTree = "<group>"; };
+		2A708AE11A8B0CF9003B1085 /* JinroHelper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JinroHelper.xcdatamodel; sourceTree = "<group>"; };
+		2A708AE31A8B0E20003B1085 /* RoleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleData.swift; sourceTree = "<group>"; };
+		2A708AE51A8B103E003B1085 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A708AE61A8B103E003B1085 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +78,9 @@
 		2A5491D61A5B7AAE0021D860 = {
 			isa = PBXGroup;
 			children = (
+				2A708AE51A8B103E003B1085 /* CoreData.framework */,
+				2A708AE01A8B0CF9003B1085 /* JinroHelper.xcdatamodeld */,
+				2A708AE31A8B0E20003B1085 /* RoleData.swift */,
 				2A5491E11A5B7AAE0021D860 /* JinroHelper */,
 				2A5491F71A5B7AAE0021D860 /* JinroHelperTests */,
 				2A5491E01A5B7AAE0021D860 /* Products */,
@@ -98,6 +110,7 @@
 				2A3414AE1A84D3FB0041DE12 /* RoleSettingTableViewCell.xib */,
 				2A3414B11A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift */,
 				2A3414B21A84F5DE0041DE12 /* RolePurchaseTableViewCell.xib */,
+				2A708AAA1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift */,
 			);
 			path = JinroHelper;
 			sourceTree = "<group>";
@@ -231,8 +244,11 @@
 			files = (
 				2A3414AF1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift in Sources */,
 				2A5491E71A5B7AAE0021D860 /* ViewController.swift in Sources */,
+				2A708AE21A8B0CF9003B1085 /* JinroHelper.xcdatamodeld in Sources */,
 				2A3414AC1A84CDAE0041DE12 /* RoleSettingTableViewController.swift in Sources */,
 				2A5491E51A5B7AAE0021D860 /* AppDelegate.swift in Sources */,
+				2A708AE41A8B0E20003B1085 /* RoleData.swift in Sources */,
+				2A708AAB1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift in Sources */,
 				2A3414B31A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +453,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2A708AE01A8B0CF9003B1085 /* JinroHelper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A708AE11A8B0CF9003B1085 /* JinroHelper.xcdatamodel */,
+			);
+			currentVersion = 2A708AE11A8B0CF9003B1085 /* JinroHelper.xcdatamodel */;
+			path = JinroHelper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2A5491D71A5B7AAE0021D860 /* Project object */;
 }

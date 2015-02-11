@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C109" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="RoleData" representedClassName="JinroHelper.RoleData" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="team" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="valid" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RoleData" positionX="-54" positionY="-9" width="128" height="135"/>
+    </elements>
+</model>
