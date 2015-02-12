@@ -122,14 +122,105 @@
                             <outlet property="delegate" destination="dMM-ZP-qWy" id="5PY-gv-fjd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="役職設定" id="jjY-65-Exg"/>
+                    <navigationItem key="navigationItem" title="役職設定" id="jjY-65-Exg">
+                        <barButtonItem key="rightBarButtonItem" title="START" id="NZW-d7-vEG">
+                            <connections>
+                                <action selector="startButton:" destination="dMM-ZP-qWy" id="6hD-dE-Ujm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="roleTableView" destination="bMR-w7-1Ai" id="8Bn-rv-VVs"/>
+                        <segue destination="iBc-91-GSS" kind="show" identifier="toAssignView" id="wOd-DB-twP"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nW4-Nj-pKA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1998" y="339"/>
+        </scene>
+        <!--役職を決めます-->
+        <scene sceneID="rV1-fV-lNv">
+            <objects>
+                <viewController id="iBc-91-GSS" customClass="AssignViewController" customModule="JinroHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wH3-wh-goX"/>
+                        <viewControllerLayoutGuide type="bottom" id="X84-Gy-IIM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8da-PK-js9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="np0-MG-2ik">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="103" y="126" width="194" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2n-bT-4f3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.9269637315" green="1" blue="0.00053359762919999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="カードを引く">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="107" y="173" width="186" height="299"/>
+                                </variation>
+                                <connections>
+                                    <action selector="assignButton:" destination="iBc-91-GSS" eventType="touchUpInside" id="3eq-Qd-2rH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力して、カードを引いてください。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7B-1M-aE3">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="30" y="82" width="340" height="30"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16O-oX-NBj">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.50596859100000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="タップして次の人にまわす">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="92" y="510" width="217" height="41"/>
+                                </variation>
+                                <connections>
+                                    <action selector="nextButton:" destination="iBc-91-GSS" eventType="touchUpInside" id="6aY-Kt-3fd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="np0-MG-2ik"/>
+                                <exclude reference="S2n-bT-4f3"/>
+                                <exclude reference="N7B-1M-aE3"/>
+                                <exclude reference="16O-oX-NBj"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="np0-MG-2ik"/>
+                                <include reference="S2n-bT-4f3"/>
+                                <include reference="N7B-1M-aE3"/>
+                                <include reference="16O-oX-NBj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="役職を決めます" id="KrP-pR-qMc"/>
+                    <connections>
+                        <outlet property="explainLabel" destination="N7B-1M-aE3" id="VlN-AU-MSn"/>
+                        <outlet property="nameTextField" destination="np0-MG-2ik" id="83x-RQ-sJY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="THv-fH-epv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2748" y="339"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="REz-DR-MZT">

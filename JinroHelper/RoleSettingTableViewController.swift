@@ -30,6 +30,8 @@ class RoleSettingTableViewController: UITableViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        //配列を初期化
+        roleArray = []
         // CoreDataからデータを読み込んで配列memosに格納する
         let appDel: AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         let context: NSManagedObjectContext = appDel.managedObjectContext!
@@ -41,10 +43,10 @@ class RoleSettingTableViewController: UITableViewController {
         for data in results {
             let id = data.id            //ID
             let team = data.team        //team（ゲームマスター：0, 村人陣営：1, 人狼陣営:2, 第三勢力：3）
-            let role = data.role        //役職名
-            let number = data.number    //人数
-            let type = data.type        //A,B,Cのタイプ
-            let valid = data.valid      //有効かどうか
+            let role:String = data.role         //役職名
+            let number:NSNumber = data.number   //人数
+            let type = data.type                //A,B,Cのタイプ
+            let valid = data.valid              //有効かどうか
             
             //if valid.boolValue {
                 roleArray.append([
@@ -159,6 +161,41 @@ class RoleSettingTableViewController: UITableViewController {
         roleArray[indexPath.row][3]=String(roleNumber)
         NSLog("%@",roleArray)
         tableView.reloadData()
+    }
+    @IBAction func startButton(sender: UIBarButtonItem) {
+        // AppDelegateクラスのインスタンスを取得
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        // AppDelegateクラスからNSManagedObjectContextを取得
+        // ゲッターはプロジェクト作成時に自動生成されている
+        if let managedObjectContext = appDelegate.managedObjectContext {
+            // EntityDescriptionのインスタンスを生成
+            let entityDiscription = NSEntityDescription.entityForName("RoleData", inManagedObjectContext: managedObjectContext);
+            // NSFetchRequest SQLのSelect文のようなイメージ
+            let fetchRequest = NSFetchRequest();
+            fetchRequest.entity = entityDiscription;
+            // NSPredicate SQLのWhere句のようなイメージ
+            for var i = 0; i<=10; i++ {
+                let predicate = NSPredicate(format: "%K = %d", "id", i)
+                fetchRequest.predicate = predicate
+                //
+                var error: NSError? = nil;
+                // フェッチリクエストの実行
+                if var results = managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
+                    for managedObject in results {
+                        let model = managedObject as RoleData;
+                        model.id = roleArray[i][0].toInt()!
+                        model.team = roleArray[i][1].toInt()!
+                        model.role = roleArray[i][2]
+                        model.number = roleArray[i][3].toInt()!
+                        model.type = roleArray[i][4].toInt()!
+                    }
+                    
+                }
+            }
+            // AppDelegateクラスに自動生成された saveContext で保存完了
+            appDelegate.saveContext()
+        }
+        performSegueWithIdentifier("toAssignView",sender: nil)
     }
     /*
     // Override to support conditional editing of the table view.

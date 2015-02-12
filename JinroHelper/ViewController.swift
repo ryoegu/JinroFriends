@@ -14,8 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var roleArray = [["占い師","1"],["霊媒師","0"],["狩人","0"],["恋人","0"],["村人","0"],["人狼","1"],["狂人","0"]]
-        writeDataFirst()
+        writeDataIfFirst()
         
     }
 
@@ -25,7 +24,7 @@ class ViewController: UIViewController {
     }
     
     
-    func writeDataFirst() {
+    func writeDataIfFirst() {
         /* Get ManagedObjectContext from AppDelegate */
         let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         let managedContext: NSManagedObjectContext = appDelegate.managedObjectContext!
@@ -59,7 +58,7 @@ class ViewController: UIViewController {
             }
             
         }else{
-            NSLog("もともとcoreDataにデータがあるので飛ばされた...")
+            NSLog("もともとCoreDataにデータがあるので飛ばされた...")
         }
     }
     
