@@ -16,7 +16,7 @@ class AssignViewController: UIViewController {
     var roleArray = [[String]]()
     //var assignDictionary:[NSDictionary] = [String,String]()
     var wholeNumber:Int = 0
-    var assignInfoArray = [NSDictionary]()
+    var assignInfoArray = [Any]()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -27,7 +27,7 @@ class AssignViewController: UIViewController {
         super.viewWillAppear(animated)
         loadDataFromCoreData()
         NSLog("%@",roleArray)
-        var assignDictionary = NSMutableDictionary.alloc()
+        var assignDictionary = ["id":"1"]
         
         for var i = 0; i < roleArray.count; i++ {
             wholeNumber = wholeNumber + roleArray[i][3].toInt()!
@@ -38,12 +38,12 @@ class AssignViewController: UIViewController {
                 for var j=1;j<=roleArray[i][3].toInt();j++ {
                     assignDictionary["id"]=roleArray[i][0]
                     assignDictionary["team"]=roleArray[i][1]
-                    assignDictionary["role"]=roleArray[i][2] + String(i)
+                    assignDictionary["role"]=roleArray[i][2] + String(j)
                     assignDictionary["screenRole"]=roleArray[i][2]
                     assignDictionary["living"]="true"
                     assignInfoArray.append(assignDictionary)
                 }
-            }else{
+            }else if roleArray[i][3].toInt()==1{
                 assignDictionary["id"]=roleArray[i][0]
                 assignDictionary["team"]=roleArray[i][1]
                 assignDictionary["role"]=roleArray[i][2]
@@ -53,14 +53,7 @@ class AssignViewController: UIViewController {
             }
         }
         
-        NSLog("%@", assignInfoArray)
-        var boolFor:Bool = false
-        if assignInfoArray.count == wholeNumber {
-            boolFor = true
-        }
-        NSLog("%@", boolFor)
-        
-        
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
