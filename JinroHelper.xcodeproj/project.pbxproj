@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0007251A90F1A7001A56B4 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0007241A90F1A7001A56B4 /* CircleLayout.m */; };
+		2A0007291A90F1E9001A56B4 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0007281A90F1E9001A56B4 /* Cell.m */; };
+		2A00072C1A90F5B7001A56B4 /* SeatsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00072A1A90F5B7001A56B4 /* SeatsCollectionViewCell.swift */; };
+		2A00072D1A90F5B7001A56B4 /* SeatsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A00072B1A90F5B7001A56B4 /* SeatsCollectionViewCell.xib */; };
+		2A15B4001A90DBDD002805B9 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A15B3FF1A90DBDD002805B9 /* SCLAlertView.swift */; };
 		2A2B98091A9060F800E5B953 /* MKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98021A9060F800E5B953 /* MKButton.swift */; };
 		2A2B980A1A9060F800E5B953 /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98031A9060F800E5B953 /* MKColor.swift */; };
 		2A2B980B1A9060F800E5B953 /* MKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98041A9060F800E5B953 /* MKImageView.swift */; };
@@ -47,6 +52,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A0007231A90F1A7001A56B4 /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
+		2A0007241A90F1A7001A56B4 /* CircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayout.m; sourceTree = "<group>"; };
+		2A0007271A90F1E9001A56B4 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		2A0007281A90F1E9001A56B4 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		2A00072A1A90F5B7001A56B4 /* SeatsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeatsCollectionViewCell.swift; sourceTree = "<group>"; };
+		2A00072B1A90F5B7001A56B4 /* SeatsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeatsCollectionViewCell.xib; sourceTree = "<group>"; };
+		2A15B3FF1A90DBDD002805B9 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 		2A2B98021A9060F800E5B953 /* MKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKButton.swift; sourceTree = "<group>"; };
 		2A2B98031A9060F800E5B953 /* MKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKColor.swift; sourceTree = "<group>"; };
 		2A2B98041A9060F800E5B953 /* MKImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKImageView.swift; sourceTree = "<group>"; };
@@ -101,6 +113,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A0007261A90F1AD001A56B4 /* CircleLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2A0007231A90F1A7001A56B4 /* CircleLayout.h */,
+				2A0007241A90F1A7001A56B4 /* CircleLayout.m */,
+				2A0007271A90F1E9001A56B4 /* Cell.h */,
+				2A0007281A90F1E9001A56B4 /* Cell.m */,
+			);
+			name = CircleLayout;
+			sourceTree = "<group>";
+		};
+		2A15B3FE1A90DBDD002805B9 /* SCLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				2A15B3FF1A90DBDD002805B9 /* SCLAlertView.swift */,
+			);
+			name = SCLAlertView;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2A15B4011A90DBE5002805B9 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2A0007261A90F1AD001A56B4 /* CircleLayout */,
+				2A2B98011A9060F800E5B953 /* MaterialKit */,
+				2A15B3FE1A90DBDD002805B9 /* SCLAlertView */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
 		2A2B98011A9060F800E5B953 /* MaterialKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,7 +202,7 @@
 				2AE3869E1A8C43C0003CB8B7 /* View */,
 				2AE3869D1A8C43B5003CB8B7 /* Model */,
 				2A5491EB1A5B7AAE0021D860 /* Images.xcassets */,
-				2A2B98011A9060F800E5B953 /* MaterialKit */,
+				2A15B4011A90DBE5002805B9 /* Libraries */,
 				2A2B98121A90667300E5B953 /* Fonts */,
 				2A5491E21A5B7AAE0021D860 /* Supporting Files */,
 			);
@@ -207,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				2A5491E81A5B7AAE0021D860 /* Main.storyboard */,
+				2A00072B1A90F5B7001A56B4 /* SeatsCollectionViewCell.xib */,
 				2A3414AE1A84D3FB0041DE12 /* RoleSettingTableViewCell.xib */,
 				2A3414B21A84F5DE0041DE12 /* RolePurchaseTableViewCell.xib */,
 				2A5491ED1A5B7AAE0021D860 /* LaunchScreen.xib */,
@@ -222,6 +265,7 @@
 				2A708AAA1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift */,
 				2A3414B11A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift */,
 				2A3414AD1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift */,
+				2A00072A1A90F5B7001A56B4 /* SeatsCollectionViewCell.swift */,
 				2AE3869B1A8BB305003CB8B7 /* AssignViewController.swift */,
 				2A2B98131A907BFC00E5B953 /* RoleSettingViewController.swift */,
 				2A2B98231A90CE6100E5B953 /* GameViewController.swift */,
@@ -313,6 +357,7 @@
 				2A3414B01A84D3FB0041DE12 /* RoleSettingTableViewCell.xib in Resources */,
 				2A5491EA1A5B7AAE0021D860 /* Main.storyboard in Resources */,
 				2A5491EF1A5B7AAE0021D860 /* LaunchScreen.xib in Resources */,
+				2A00072D1A90F5B7001A56B4 /* SeatsCollectionViewCell.xib in Resources */,
 				2A5491EC1A5B7AAE0021D860 /* Images.xcassets in Resources */,
 				2A3414B41A84F5DE0041DE12 /* RolePurchaseTableViewCell.xib in Resources */,
 			);
@@ -336,7 +381,10 @@
 				2A3414AF1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift in Sources */,
 				2A2B98141A907BFC00E5B953 /* RoleSettingViewController.swift in Sources */,
 				2A2B981C1A907CB200E5B953 /* OTPageScrollView.m in Sources */,
+				2A0007291A90F1E9001A56B4 /* Cell.m in Sources */,
 				2A2B980E1A9060F800E5B953 /* MKTableViewCell.swift in Sources */,
+				2A0007251A90F1A7001A56B4 /* CircleLayout.m in Sources */,
+				2A00072C1A90F5B7001A56B4 /* SeatsCollectionViewCell.swift in Sources */,
 				2A2B980B1A9060F800E5B953 /* MKImageView.swift in Sources */,
 				2A2B98241A90CE6100E5B953 /* GameViewController.swift in Sources */,
 				2A2B980D1A9060F800E5B953 /* MKLayer.swift in Sources */,
@@ -351,6 +399,7 @@
 				2A2B98091A9060F800E5B953 /* MKButton.swift in Sources */,
 				2A2B980F1A9060F800E5B953 /* MKTextField.swift in Sources */,
 				2AE3869C1A8BB305003CB8B7 /* AssignViewController.swift in Sources */,
+				2A15B4001A90DBDD002805B9 /* SCLAlertView.swift in Sources */,
 				2A3414B31A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

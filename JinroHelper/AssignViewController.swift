@@ -30,7 +30,7 @@ class AssignViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         loadDataFromCoreData()
-        NSLog("%@",roleArray)
+        //NSLog("%@",roleArray)
         var assignDictionary = ["id":"1"]
         
         for var i = 0; i < roleArray.count; i++ {
@@ -57,35 +57,46 @@ class AssignViewController: UIViewController {
             }
         }
         shuffledAssignedArray = shuffle(assignInfoArray)
-        println(shuffledAssignedArray)
+        //println(shuffledAssignedArray)
+        showPlayerNameInputAlert()
 
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func showPlayerNameInputAlert() {
+        let alert = SCLAlertView()
+        let text = alert.addTextField(title: "Your Name")
+        alert.addButton("カードを引く", action: {() ->Void in
+            self.assign(text.text)
+        })
+        alert.showEdit("名前を入力", subTitle: "プレーヤーの名前を入力してください。")
     }
+
     
     
     @IBAction func assignButtonTapped(sender: UIButton) {
+        //シャッフルボタン
+    }
+    
+    func assign(name:String){
         //カードボタンの処理を書く
+        var playerName = name
         let currentDictionary:AnyObject = shuffledAssignedArray[currentNumber]
-        println(currentDictionary["screenRole"])
+        //println(currentDictionary["screenRole"])
         let roleString = currentDictionary["screenRole"] as? String
-        sender.setTitle(roleString, forState: UIControlState.Normal)
         
         nameTextField.enabled = false
         //プレーヤー名をDictionaryに書き込む
-        if nameTextField.text == "" {
-            nameTextField.text = "Player" + String(currentNumber)
+        if playerName == "" {
+            playerName = "Player" + String(currentNumber+1)
         }
         
         var assignDictionary = ["player":"1"]
         assignDictionary = currentDictionary as Dictionary
-        assignDictionary["player"] = nameTextField.text
+        assignDictionary["player"] = playerName
         shuffledAssignedArray[currentNumber] = assignDictionary
-        println(shuffledAssignedArray[currentNumber])
-        
+        //println(shuffledAssignedArray[currentNumber])
         currentNumber += 1
+        assignButton.setTitle(roleString, forState: UIControlState.Normal)
     }
 
     @IBAction func nextButtonTapped(sender: UIButton) {
@@ -93,17 +104,17 @@ class AssignViewController: UIViewController {
         assignButton.setTitle("カードを引く", forState: UIControlState.Normal)
         nameTextField.text=""
         
-        
         if currentNumber == wholeNumber-1 {
             sender.setTitle("次へ", forState: UIControlState.Normal)
-        }
-        
-        if currentNumber == wholeNumber {
-           
+            self.showPlayerNameInputAlert()
+        }else if currentNumber == wholeNumber {
+            let saveData = NSUserDefaults.standardUserDefaults()
+            saveData.setObject(shuffledAssignedArray, forKey: "ASSIGNED")
+            saveData.synchronize()
+            SCLAlertView().showInfo("確認", subTitle: "ゲームをはじめます。\nこのiPhoneをゲームマスターに渡してください。", closeButtonTitle: "私はゲームマスターです")
             self.performSegueWithIdentifier("toGameView", sender: nil)
-
-            
-            
+        }else{
+            self.showPlayerNameInputAlert()
         }
     }
     /*
@@ -158,5 +169,10 @@ class AssignViewController: UIViewController {
             swap(&list[i], &list[j])
         }
         return list
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 }
