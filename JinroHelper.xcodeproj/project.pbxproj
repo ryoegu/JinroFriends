@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2B98091A9060F800E5B953 /* MKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98021A9060F800E5B953 /* MKButton.swift */; };
+		2A2B980A1A9060F800E5B953 /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98031A9060F800E5B953 /* MKColor.swift */; };
+		2A2B980B1A9060F800E5B953 /* MKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98041A9060F800E5B953 /* MKImageView.swift */; };
+		2A2B980C1A9060F800E5B953 /* MKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98051A9060F800E5B953 /* MKLabel.swift */; };
+		2A2B980D1A9060F800E5B953 /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98061A9060F800E5B953 /* MKLayer.swift */; };
+		2A2B980E1A9060F800E5B953 /* MKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98071A9060F800E5B953 /* MKTableViewCell.swift */; };
+		2A2B980F1A9060F800E5B953 /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98081A9060F800E5B953 /* MKTextField.swift */; };
+		2A2B98111A90666900E5B953 /* JOURNAL.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2A2B98101A90666900E5B953 /* JOURNAL.TTF */; };
 		2A3414AC1A84CDAE0041DE12 /* RoleSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3414AB1A84CDAE0041DE12 /* RoleSettingTableViewController.swift */; };
 		2A3414AF1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3414AD1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift */; };
 		2A3414B01A84D3FB0041DE12 /* RoleSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3414AE1A84D3FB0041DE12 /* RoleSettingTableViewCell.xib */; };
@@ -35,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A2B98021A9060F800E5B953 /* MKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKButton.swift; sourceTree = "<group>"; };
+		2A2B98031A9060F800E5B953 /* MKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKColor.swift; sourceTree = "<group>"; };
+		2A2B98041A9060F800E5B953 /* MKImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKImageView.swift; sourceTree = "<group>"; };
+		2A2B98051A9060F800E5B953 /* MKLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKLabel.swift; sourceTree = "<group>"; };
+		2A2B98061A9060F800E5B953 /* MKLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKLayer.swift; sourceTree = "<group>"; };
+		2A2B98071A9060F800E5B953 /* MKTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTableViewCell.swift; sourceTree = "<group>"; };
+		2A2B98081A9060F800E5B953 /* MKTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTextField.swift; sourceTree = "<group>"; };
+		2A2B98101A90666900E5B953 /* JOURNAL.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = JOURNAL.TTF; sourceTree = "<group>"; };
 		2A3414AB1A84CDAE0041DE12 /* RoleSettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleSettingTableViewController.swift; sourceTree = "<group>"; };
 		2A3414AD1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleSettingTableViewCell.swift; sourceTree = "<group>"; };
 		2A3414AE1A84D3FB0041DE12 /* RoleSettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoleSettingTableViewCell.xib; sourceTree = "<group>"; };
@@ -74,6 +90,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A2B98011A9060F800E5B953 /* MaterialKit */ = {
+			isa = PBXGroup;
+			children = (
+				2A2B98021A9060F800E5B953 /* MKButton.swift */,
+				2A2B98031A9060F800E5B953 /* MKColor.swift */,
+				2A2B98041A9060F800E5B953 /* MKImageView.swift */,
+				2A2B98051A9060F800E5B953 /* MKLabel.swift */,
+				2A2B98061A9060F800E5B953 /* MKLayer.swift */,
+				2A2B98071A9060F800E5B953 /* MKTableViewCell.swift */,
+				2A2B98081A9060F800E5B953 /* MKTextField.swift */,
+			);
+			path = MaterialKit;
+			sourceTree = "<group>";
+		};
+		2A2B98121A90667300E5B953 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2A2B98101A90666900E5B953 /* JOURNAL.TTF */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		2A5491D61A5B7AAE0021D860 = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +137,9 @@
 				2AE3869E1A8C43C0003CB8B7 /* View */,
 				2AE3869D1A8C43B5003CB8B7 /* Model */,
 				2A5491EB1A5B7AAE0021D860 /* Images.xcassets */,
+				2A2B98011A9060F800E5B953 /* MaterialKit */,
+				2A2B98121A90667300E5B953 /* Fonts */,
 				2A5491E21A5B7AAE0021D860 /* Supporting Files */,
-				2A3414AD1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift */,
 			);
 			path = JinroHelper;
 			sourceTree = "<group>";
@@ -158,6 +197,7 @@
 				2A3414AB1A84CDAE0041DE12 /* RoleSettingTableViewController.swift */,
 				2A708AAA1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift */,
 				2A3414B11A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift */,
+				2A3414AD1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift */,
 				2AE3869B1A8BB305003CB8B7 /* AssignViewController.swift */,
 			);
 			name = Controller;
@@ -243,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2B98111A90666900E5B953 /* JOURNAL.TTF in Resources */,
 				2A3414B01A84D3FB0041DE12 /* RoleSettingTableViewCell.xib in Resources */,
 				2A5491EA1A5B7AAE0021D860 /* Main.storyboard in Resources */,
 				2A5491EF1A5B7AAE0021D860 /* LaunchScreen.xib in Resources */,
@@ -265,13 +306,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2B980A1A9060F800E5B953 /* MKColor.swift in Sources */,
 				2A3414AF1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift in Sources */,
+				2A2B980E1A9060F800E5B953 /* MKTableViewCell.swift in Sources */,
+				2A2B980B1A9060F800E5B953 /* MKImageView.swift in Sources */,
+				2A2B980D1A9060F800E5B953 /* MKLayer.swift in Sources */,
 				2A5491E71A5B7AAE0021D860 /* ViewController.swift in Sources */,
 				2A708AE21A8B0CF9003B1085 /* JinroHelper.xcdatamodeld in Sources */,
 				2A3414AC1A84CDAE0041DE12 /* RoleSettingTableViewController.swift in Sources */,
 				2A5491E51A5B7AAE0021D860 /* AppDelegate.swift in Sources */,
+				2A2B980C1A9060F800E5B953 /* MKLabel.swift in Sources */,
 				2A708AE41A8B0E20003B1085 /* RoleData.swift in Sources */,
 				2A708AAB1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift in Sources */,
+				2A2B98091A9060F800E5B953 /* MKButton.swift in Sources */,
+				2A2B980F1A9060F800E5B953 /* MKTextField.swift in Sources */,
 				2AE3869C1A8BB305003CB8B7 /* AssignViewController.swift in Sources */,
 				2A3414B31A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift in Sources */,
 			);

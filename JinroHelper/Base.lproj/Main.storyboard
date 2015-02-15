@@ -16,15 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人狼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kky-SW-yKM">
-                                <rect key="frame" x="249" y="70" width="102" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="117" y="93" width="166" height="43"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imb-Pb-cw6">
                                 <rect key="frame" x="0.0" y="471" width="600" height="65"/>
                                 <color key="backgroundColor" red="1" green="0.98606308350000005" blue="0.76778029520000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,7 +30,7 @@
                                     <segue destination="kzP-kE-u8h" kind="show" id="Ctw-FK-D68"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZE-Qj-e43">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZE-Qj-e43" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="325" width="600" height="65"/>
                                 <color key="backgroundColor" red="0.9269637315" green="1" blue="0.00053359762919999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
@@ -79,7 +70,6 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="kky-SW-yKM"/>
                                 <exclude reference="Imb-Pb-cw6"/>
                                 <exclude reference="xZE-Qj-e43"/>
                                 <exclude reference="E96-X3-D5Z"/>
@@ -88,7 +78,6 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="kky-SW-yKM"/>
                                 <include reference="Imb-Pb-cw6"/>
                                 <include reference="xZE-Qj-e43"/>
                                 <include reference="E96-X3-D5Z"/>

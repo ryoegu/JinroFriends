@@ -11,9 +11,13 @@ import CoreData
 
 class ViewController: UIViewController {
     var allDataArr = [NSManagedObject]()
+    //let mainSize: CGSize = UIScreen.mainScreen().bounds.size
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        showTitle()
+        
+        
         writeDataIfFirst()
         
     }
@@ -23,6 +27,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func showTitle() {
+        let titleLabel: UILabel = UILabel(frame: CGRectMake(0,0,400,100))
+        titleLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 200)
+        titleLabel.text = "Jinro Friends"
+        titleLabel.font = UIFont(name:"Journal",size:60)
+        titleLabel.textColor = UIColor.whiteColor()
+        titleLabel.textAlignment = NSTextAlignment.Center
+        self.view.addSubview(titleLabel)
+        
+    }
     
     func writeDataIfFirst() {
         /* Get ManagedObjectContext from AppDelegate */
