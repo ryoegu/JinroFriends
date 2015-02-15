@@ -62,7 +62,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="w0a-DF-maf" kind="show" id="QTv-zK-ODd"/>
+                                    <segue destination="Rlo-iW-dR9" kind="show" id="Iu5-bY-eey"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E96-X3-D5Z" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
@@ -177,25 +177,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244.5" y="339"/>
+            <point key="canvasLocation" x="124.5" y="271"/>
         </scene>
-        <!--View Controller-->
+        <!--人数設定-->
         <scene sceneID="Slb-Eq-uv2">
             <objects>
-                <viewController id="1EE-gX-fcu" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="1EE-gX-fcu" customClass="RoleSettingViewController" customModule="JinroHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J7k-Y1-ump"/>
                         <viewControllerLayoutGuide type="bottom" id="r8S-hY-dDW"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vRe-9Q-ZhG">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="vRe-9Q-ZhG">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sBN-q3-M6N"/>
+                    <navigationItem key="navigationItem" title="人数設定" id="sBN-q3-M6N"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U32-8W-aSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1998" y="-335"/>
+            <point key="canvasLocation" x="1998" y="-371"/>
         </scene>
         <!--役職設定-->
         <scene sceneID="27E-2J-pac">
@@ -315,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THv-fH-epv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2748" y="339"/>
+            <point key="canvasLocation" x="2745" y="-335"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="REz-DR-MZT">
