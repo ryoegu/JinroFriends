@@ -18,6 +18,7 @@
 		2A2B98141A907BFC00E5B953 /* RoleSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98131A907BFC00E5B953 /* RoleSettingViewController.swift */; };
 		2A2B981C1A907CB200E5B953 /* OTPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98171A907CB200E5B953 /* OTPageScrollView.m */; };
 		2A2B981D1A907CB200E5B953 /* OTPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98191A907CB200E5B953 /* OTPageView.m */; };
+		2A2B98241A90CE6100E5B953 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98231A90CE6100E5B953 /* GameViewController.swift */; };
 		2A3414AC1A84CDAE0041DE12 /* RoleSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3414AB1A84CDAE0041DE12 /* RoleSettingTableViewController.swift */; };
 		2A3414AF1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3414AD1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift */; };
 		2A3414B01A84D3FB0041DE12 /* RoleSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3414AE1A84D3FB0041DE12 /* RoleSettingTableViewCell.xib */; };
@@ -60,6 +61,7 @@
 		2A2B98171A907CB200E5B953 /* OTPageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPageScrollView.m; sourceTree = "<group>"; };
 		2A2B98181A907CB200E5B953 /* OTPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPageView.h; sourceTree = "<group>"; };
 		2A2B98191A907CB200E5B953 /* OTPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPageView.m; sourceTree = "<group>"; };
+		2A2B98231A90CE6100E5B953 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		2A3414AB1A84CDAE0041DE12 /* RoleSettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleSettingTableViewController.swift; sourceTree = "<group>"; };
 		2A3414AD1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleSettingTableViewCell.swift; sourceTree = "<group>"; };
 		2A3414AE1A84D3FB0041DE12 /* RoleSettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoleSettingTableViewCell.xib; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				2A3414AD1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift */,
 				2AE3869B1A8BB305003CB8B7 /* AssignViewController.swift */,
 				2A2B98131A907BFC00E5B953 /* RoleSettingViewController.swift */,
+				2A2B98231A90CE6100E5B953 /* GameViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				2A2B981C1A907CB200E5B953 /* OTPageScrollView.m in Sources */,
 				2A2B980E1A9060F800E5B953 /* MKTableViewCell.swift in Sources */,
 				2A2B980B1A9060F800E5B953 /* MKImageView.swift in Sources */,
+				2A2B98241A90CE6100E5B953 /* GameViewController.swift in Sources */,
 				2A2B980D1A9060F800E5B953 /* MKLayer.swift in Sources */,
 				2A5491E71A5B7AAE0021D860 /* ViewController.swift in Sources */,
 				2A708AE21A8B0CF9003B1085 /* JinroHelper.xcdatamodeld in Sources */,

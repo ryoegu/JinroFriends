@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -131,18 +132,18 @@
                                 <exclude reference="eub-1i-OJs"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="02F-NI-7KN"/>
                                 <exclude reference="02e-BR-TT1"/>
                                 <exclude reference="UfV-cv-s2O"/>
                                 <exclude reference="g5o-Qu-eOY"/>
                                 <exclude reference="oBV-ne-08c"/>
                                 <exclude reference="yYD-75-nNy"/>
-                                <exclude reference="O3R-Xt-HkJ"/>
-                                <exclude reference="tV9-Ez-M4s"/>
-                                <exclude reference="u4X-Ku-1Zl"/>
                                 <exclude reference="186-TF-Yno"/>
                                 <exclude reference="Tk2-B5-umn"/>
                                 <exclude reference="ibK-Ih-MGw"/>
-                                <exclude reference="02F-NI-7KN"/>
+                                <exclude reference="O3R-Xt-HkJ"/>
+                                <exclude reference="tV9-Ez-M4s"/>
+                                <exclude reference="u4X-Ku-1Zl"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -153,18 +154,18 @@
                                 <include reference="eub-1i-OJs"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="02F-NI-7KN"/>
                                 <include reference="02e-BR-TT1"/>
                                 <include reference="UfV-cv-s2O"/>
                                 <include reference="g5o-Qu-eOY"/>
                                 <include reference="oBV-ne-08c"/>
                                 <include reference="yYD-75-nNy"/>
-                                <include reference="O3R-Xt-HkJ"/>
-                                <include reference="tV9-Ez-M4s"/>
-                                <include reference="u4X-Ku-1Zl"/>
                                 <include reference="186-TF-Yno"/>
                                 <include reference="Tk2-B5-umn"/>
                                 <include reference="ibK-Ih-MGw"/>
-                                <include reference="02F-NI-7KN"/>
+                                <include reference="O3R-Xt-HkJ"/>
+                                <include reference="tV9-Ez-M4s"/>
+                                <include reference="u4X-Ku-1Zl"/>
                             </mask>
                         </variation>
                     </view>
@@ -188,40 +189,16 @@
                         <viewControllerLayoutGuide type="bottom" id="r8S-hY-dDW"/>
                     </layoutGuides>
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="vRe-9Q-ZhG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHM-rw-jhG" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.50596859100000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="ykf-wf-8mp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
-                                <state key="normal" title="ゲームをはじめる">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="ykf-wf-8mp"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="ykf-wf-8mp"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="start" destination="1EE-gX-fcu" eventType="touchUpInside" id="3rR-zU-WYh"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="役職名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bae-Ac-nJd" customClass="MKLabel" customModule="JinroHelper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="104" y="246" width="136" height="35"/>
+                                    <rect key="frame" x="104" y="246" width="136" height="43"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="◯◯陣営" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeZ-yr-AgA" customClass="MKLabel" customModule="JinroHelper" customModuleProvider="target">
@@ -247,7 +224,7 @@
                                     <rect key="frame" x="231" y="214" width="107" height="65"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOQ-K2-jv1" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOQ-K2-jv1">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.022464787999999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -276,7 +253,7 @@
                                     <action selector="plus" destination="1EE-gX-fcu" eventType="touchUpInside" id="mVq-cG-pfV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IU-ut-LD9" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IU-ut-LD9">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.1016279266" green="0.48494933130000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -305,21 +282,6 @@
                                     <action selector="minus" destination="1EE-gX-fcu" eventType="touchUpInside" id="Zfl-vC-vk4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXu-Bh-DTY">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="349" y="495" width="51" height="27"/>
-                                </variation>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lRb-Ua-G57">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="9" y="222" width="80" height="105"/>
-                                </variation>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="その役職の説明" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7A8-mK-nbF">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -330,47 +292,99 @@
                                     <rect key="frame" x="80" y="357" width="240" height="92"/>
                                 </variation>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lRb-Ua-G57">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="9" y="222" width="80" height="105"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="プレーヤーのほかにゲームマスターがいる" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXu-Bh-DTY">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="9" y="495" width="295" height="27"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHM-rw-jhG" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.50596859100000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="1pG-jl-jlj"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="Wl3-1w-qlO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                                <state key="normal" title="ゲームをはじめる">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1pG-jl-jlj"/>
+                                        <exclude reference="Wl3-1w-qlO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="1pG-jl-jlj"/>
+                                        <include reference="Wl3-1w-qlO"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="start" destination="1EE-gX-fcu" eventType="touchUpInside" id="3rR-zU-WYh"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AF8-nU-sw8">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="312" y="491" width="51" height="31"/>
+                                </variation>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="HHM-rw-jhG" secondAttribute="trailing" constant="-16" id="C42-o6-d74"/>
-                            <constraint firstItem="r8S-hY-dDW" firstAttribute="top" secondItem="HHM-rw-jhG" secondAttribute="bottom" id="E1O-KW-TYF"/>
-                            <constraint firstItem="HHM-rw-jhG" firstAttribute="leading" secondItem="vRe-9Q-ZhG" secondAttribute="leadingMargin" constant="-16" id="csp-AI-82f"/>
+                            <constraint firstItem="HHM-rw-jhG" firstAttribute="leading" secondItem="vRe-9Q-ZhG" secondAttribute="leadingMargin" constant="-16" id="Hlh-2D-NIT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HHM-rw-jhG" secondAttribute="trailing" constant="-16" id="LeY-LO-uNT"/>
+                            <constraint firstItem="r8S-hY-dDW" firstAttribute="top" secondItem="HHM-rw-jhG" secondAttribute="bottom" id="c3u-o9-0MF"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="HHM-rw-jhG"/>
                                 <exclude reference="bae-Ac-nJd"/>
                                 <exclude reference="KeZ-yr-AgA"/>
                                 <exclude reference="xNI-Kf-qib"/>
                                 <exclude reference="AOQ-K2-jv1"/>
                                 <exclude reference="5IU-ut-LD9"/>
-                                <exclude reference="mXu-Bh-DTY"/>
-                                <exclude reference="lRb-Ua-G57"/>
                                 <exclude reference="7A8-mK-nbF"/>
+                                <exclude reference="lRb-Ua-G57"/>
+                                <exclude reference="mXu-Bh-DTY"/>
+                                <exclude reference="HHM-rw-jhG"/>
+                                <exclude reference="AF8-nU-sw8"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="C42-o6-d74"/>
-                                <exclude reference="csp-AI-82f"/>
-                                <exclude reference="E1O-KW-TYF"/>
+                                <exclude reference="Hlh-2D-NIT"/>
+                                <exclude reference="LeY-LO-uNT"/>
+                                <exclude reference="c3u-o9-0MF"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="HHM-rw-jhG"/>
                                 <include reference="bae-Ac-nJd"/>
                                 <include reference="KeZ-yr-AgA"/>
                                 <include reference="xNI-Kf-qib"/>
                                 <include reference="AOQ-K2-jv1"/>
                                 <include reference="5IU-ut-LD9"/>
-                                <include reference="mXu-Bh-DTY"/>
-                                <include reference="lRb-Ua-G57"/>
                                 <include reference="7A8-mK-nbF"/>
+                                <include reference="lRb-Ua-G57"/>
+                                <include reference="mXu-Bh-DTY"/>
+                                <include reference="HHM-rw-jhG"/>
+                                <include reference="AF8-nU-sw8"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="C42-o6-d74"/>
-                                <include reference="csp-AI-82f"/>
-                                <include reference="E1O-KW-TYF"/>
+                                <include reference="Hlh-2D-NIT"/>
+                                <include reference="LeY-LO-uNT"/>
+                                <include reference="c3u-o9-0MF"/>
                             </mask>
                         </variation>
                     </view>
@@ -384,7 +398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U32-8W-aSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1998" y="-371"/>
+            <point key="canvasLocation" x="1876.5" y="-329"/>
         </scene>
         <!--役職設定-->
         <scene sceneID="27E-2J-pac">
@@ -434,9 +448,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="np0-MG-2ik" customClass="MKTextField" customModule="JinroHelper" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="np0-MG-2ik" customClass="MKTextField" customModule="JinroHelper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <color key="backgroundColor" red="0.24555638227513232" green="0.090447822864361191" blue="0.080133486908104734" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
@@ -453,9 +467,15 @@
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="padding">
-                                        <size key="value" width="6" height="1"/>
+                                        <size key="value" width="0.0" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderHighlightWidth">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
@@ -473,7 +493,7 @@
                                     <rect key="frame" x="107" y="173" width="186" height="299"/>
                                 </variation>
                                 <connections>
-                                    <action selector="assignButton:" destination="iBc-91-GSS" eventType="touchUpInside" id="3eq-Qd-2rH"/>
+                                    <action selector="assignButtonTapped:" destination="iBc-91-GSS" eventType="touchUpInside" id="3Az-nJ-eQK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力して、カードを引いてください。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7B-1M-aE3">
@@ -495,7 +515,7 @@
                                     <rect key="frame" x="92" y="510" width="217" height="41"/>
                                 </variation>
                                 <connections>
-                                    <action selector="nextButton:" destination="iBc-91-GSS" eventType="touchUpInside" id="6aY-Kt-3fd"/>
+                                    <action selector="nextButtonTapped:" destination="iBc-91-GSS" eventType="touchUpInside" id="nTs-bd-txN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -519,13 +539,34 @@
                     </view>
                     <navigationItem key="navigationItem" title="役職を決めます" id="KrP-pR-qMc"/>
                     <connections>
+                        <outlet property="assignButton" destination="S2n-bT-4f3" id="6k4-lv-PiH"/>
                         <outlet property="explainLabel" destination="N7B-1M-aE3" id="VlN-AU-MSn"/>
                         <outlet property="nameTextField" destination="np0-MG-2ik" id="83x-RQ-sJY"/>
+                        <outlet property="nextButton" destination="16O-oX-NBj" id="p51-6n-Ray"/>
+                        <segue destination="PUu-do-CbY" kind="show" identifier="toGameView" id="eH8-xw-tk2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THv-fH-epv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2745" y="-335"/>
+            <point key="canvasLocation" x="2677.5" y="-329"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iIO-2a-Kas">
+            <objects>
+                <viewController id="PUu-do-CbY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kUW-Yw-jBO"/>
+                        <viewControllerLayoutGuide type="bottom" id="dj8-g7-Nbg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="701-uq-fGm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MGA-b9-04I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3429" y="-329"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="REz-DR-MZT">
@@ -567,7 +608,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iji-GT-z3I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1998" y="1073"/>
+            <point key="canvasLocation" x="1848" y="1073"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="H90-Z4-kXn">

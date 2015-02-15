@@ -13,10 +13,14 @@ class AssignViewController: UIViewController {
 
     @IBOutlet var explainLabel: UILabel!
     @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var assignButton: UIButton!
+    @IBOutlet var nextButton: UIButton!
     var roleArray = [[String]]()
     //var assignDictionary:[NSDictionary] = [String,String]()
     var wholeNumber:Int = 0
-    var assignInfoArray = [Any]()
+    var assignInfoArray = [AnyObject]()
+    var currentNumber:Int = 0
+    var shuffledAssignedArray = [AnyObject]()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -52,7 +56,8 @@ class AssignViewController: UIViewController {
                 assignInfoArray.append(assignDictionary)
             }
         }
-        
+        shuffledAssignedArray = shuffle(assignInfoArray)
+        println(shuffledAssignedArray)
 
     }
     override func didReceiveMemoryWarning() {
@@ -61,11 +66,45 @@ class AssignViewController: UIViewController {
     }
     
     
-    @IBAction func assignButton(sender: UIButton) {
+    @IBAction func assignButtonTapped(sender: UIButton) {
+        //カードボタンの処理を書く
+        let currentDictionary:AnyObject = shuffledAssignedArray[currentNumber]
+        println(currentDictionary["screenRole"])
+        let roleString = currentDictionary["screenRole"] as? String
+        sender.setTitle(roleString, forState: UIControlState.Normal)
         
+        nameTextField.enabled = false
+        //プレーヤー名をDictionaryに書き込む
+        if nameTextField.text == "" {
+            nameTextField.text = "Player" + String(currentNumber)
+        }
+        
+        var assignDictionary = ["player":"1"]
+        assignDictionary = currentDictionary as Dictionary
+        assignDictionary["player"] = nameTextField.text
+        shuffledAssignedArray[currentNumber] = assignDictionary
+        println(shuffledAssignedArray[currentNumber])
+        
+        currentNumber += 1
     }
 
-    @IBAction func nextButton(sender: UIButton) {
+    @IBAction func nextButtonTapped(sender: UIButton) {
+        nameTextField.enabled = true
+        assignButton.setTitle("カードを引く", forState: UIControlState.Normal)
+        nameTextField.text=""
+        
+        
+        if currentNumber == wholeNumber-1 {
+            sender.setTitle("次へ", forState: UIControlState.Normal)
+        }
+        
+        if currentNumber == wholeNumber {
+           
+            self.performSegueWithIdentifier("toGameView", sender: nil)
+
+            
+            
+        }
     }
     /*
     // MARK: - Navigation
@@ -110,5 +149,14 @@ class AssignViewController: UIViewController {
         }
     }
     
-
+    // MARK: - Array Shuffle
+    // 参考：http://stackoverflow.com/questions/24026510/how-do-i-shuffle-an-array-in-swift
+    func shuffle<C: MutableCollectionType where C.Index == Int>(var list: C) -> C {
+        let count = countElements(list)
+        for i in 0..<(count - 1) {
+            let j = Int(arc4random_uniform(UInt32(count - i))) + i
+            swap(&list[i], &list[j])
+        }
+        return list
+    }
 }
