@@ -550,10 +550,10 @@
             </objects>
             <point key="canvasLocation" x="2677.5" y="-329"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Controller-->
         <scene sceneID="iIO-2a-Kas">
             <objects>
-                <viewController id="PUu-do-CbY" sceneMemberID="viewController">
+                <viewController id="PUu-do-CbY" customClass="GameViewController" customModule="JinroHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kUW-Yw-jBO"/>
                         <viewControllerLayoutGuide type="bottom" id="dj8-g7-Nbg"/>
@@ -563,6 +563,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Game Controller" id="EZb-es-Fhk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGA-b9-04I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
