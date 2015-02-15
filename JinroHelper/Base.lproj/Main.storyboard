@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,15 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imb-Pb-cw6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imb-Pb-cw6" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="471" width="600" height="65"/>
                                 <color key="backgroundColor" red="1" green="0.98606308350000005" blue="0.76778029520000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="CiA-X9-Ca6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                 <state key="normal" title="役職設定">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="41" y="465" width="319" height="65"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CiA-X9-Ca6"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="CiA-X9-Ca6"/>
+                                    </mask>
                                 </variation>
                                 <connections>
                                     <segue destination="kzP-kE-u8h" kind="show" id="Ctw-FK-D68"/>
@@ -33,47 +44,105 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZE-Qj-e43" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="325" width="600" height="65"/>
                                 <color key="backgroundColor" red="0.9269637315" green="1" blue="0.00053359762919999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="pCk-Zg-oCG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                 <state key="normal" title="みんなで遊ぶ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="41" y="246" width="319" height="65"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pCk-Zg-oCG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="pCk-Zg-oCG"/>
+                                    </mask>
                                 </variation>
                                 <connections>
                                     <segue destination="w0a-DF-maf" kind="show" id="QTv-zK-ODd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E96-X3-D5Z">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E96-X3-D5Z" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="398" width="600" height="65"/>
                                 <color key="backgroundColor" red="1" green="0.98606308350000005" blue="0.76778029520000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="orC-Fx-5vB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                 <state key="normal" title="村をつくる">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="41" y="319" width="319" height="65"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="orC-Fx-5vB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="orC-Fx-5vB"/>
+                                    </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eub-1i-OJs">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eub-1i-OJs" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="471" width="600" height="65"/>
                                 <color key="backgroundColor" red="1" green="0.98606308350000005" blue="0.76778029520000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="0Ba-bg-rph"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                 <state key="normal" title="村にはいる">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="41" y="392" width="319" height="65"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0Ba-bg-rph"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="0Ba-bg-rph"/>
+                                    </mask>
                                 </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Imb-Pb-cw6" secondAttribute="bottom" constant="70" id="02F-NI-7KN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xZE-Qj-e43" secondAttribute="trailing" constant="24" id="02e-BR-TT1"/>
+                            <constraint firstItem="Imb-Pb-cw6" firstAttribute="top" secondItem="eub-1i-OJs" secondAttribute="bottom" constant="8" id="186-TF-Yno"/>
+                            <constraint firstItem="eub-1i-OJs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="25" id="O3R-Xt-HkJ"/>
+                            <constraint firstItem="Imb-Pb-cw6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="25" id="Tk2-B5-umn"/>
+                            <constraint firstItem="xZE-Qj-e43" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="25" id="UfV-cv-s2O"/>
+                            <constraint firstItem="E96-X3-D5Z" firstAttribute="top" secondItem="xZE-Qj-e43" secondAttribute="bottom" constant="8" id="g5o-Qu-eOY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Imb-Pb-cw6" secondAttribute="trailing" constant="24" id="ibK-Ih-MGw"/>
+                            <constraint firstItem="E96-X3-D5Z" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="25" id="oBV-ne-08c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eub-1i-OJs" secondAttribute="trailing" constant="24" id="tV9-Ez-M4s"/>
+                            <constraint firstItem="eub-1i-OJs" firstAttribute="top" secondItem="E96-X3-D5Z" secondAttribute="bottom" constant="8" id="u4X-Ku-1Zl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="E96-X3-D5Z" secondAttribute="trailing" constant="24" id="yYD-75-nNy"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Imb-Pb-cw6"/>
                                 <exclude reference="xZE-Qj-e43"/>
                                 <exclude reference="E96-X3-D5Z"/>
                                 <exclude reference="eub-1i-OJs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="02e-BR-TT1"/>
+                                <exclude reference="UfV-cv-s2O"/>
+                                <exclude reference="g5o-Qu-eOY"/>
+                                <exclude reference="oBV-ne-08c"/>
+                                <exclude reference="yYD-75-nNy"/>
+                                <exclude reference="O3R-Xt-HkJ"/>
+                                <exclude reference="tV9-Ez-M4s"/>
+                                <exclude reference="u4X-Ku-1Zl"/>
+                                <exclude reference="186-TF-Yno"/>
+                                <exclude reference="Tk2-B5-umn"/>
+                                <exclude reference="ibK-Ih-MGw"/>
+                                <exclude reference="02F-NI-7KN"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -83,12 +152,50 @@
                                 <include reference="E96-X3-D5Z"/>
                                 <include reference="eub-1i-OJs"/>
                             </mask>
+                            <mask key="constraints">
+                                <include reference="02e-BR-TT1"/>
+                                <include reference="UfV-cv-s2O"/>
+                                <include reference="g5o-Qu-eOY"/>
+                                <include reference="oBV-ne-08c"/>
+                                <include reference="yYD-75-nNy"/>
+                                <include reference="O3R-Xt-HkJ"/>
+                                <include reference="tV9-Ez-M4s"/>
+                                <include reference="u4X-Ku-1Zl"/>
+                                <include reference="186-TF-Yno"/>
+                                <include reference="Tk2-B5-umn"/>
+                                <include reference="ibK-Ih-MGw"/>
+                                <include reference="02F-NI-7KN"/>
+                            </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="goToVillageButton" destination="eub-1i-OJs" id="Vno-4j-Wq1"/>
+                        <outlet property="makeVillageButton" destination="E96-X3-D5Z" id="lT6-CH-pV0"/>
+                        <outlet property="onePlayButton" destination="xZE-Qj-e43" id="h0O-sS-vNc"/>
+                        <outlet property="settingButton" destination="Imb-Pb-cw6" id="Mk6-4S-v49"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="244.5" y="339"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Slb-Eq-uv2">
+            <objects>
+                <viewController id="1EE-gX-fcu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J7k-Y1-ump"/>
+                        <viewControllerLayoutGuide type="bottom" id="r8S-hY-dDW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vRe-9Q-ZhG">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sBN-q3-M6N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U32-8W-aSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1998" y="-335"/>
         </scene>
         <!--役職設定-->
         <scene sceneID="27E-2J-pac">
@@ -120,7 +227,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="roleTableView" destination="bMR-w7-1Ai" id="8Bn-rv-VVs"/>
-                        <segue destination="iBc-91-GSS" kind="show" identifier="toAssignView" id="wOd-DB-twP"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nW4-Nj-pKA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -221,9 +327,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="dMM-ZP-qWy" kind="relationship" relationship="rootViewController" id="RbT-Me-Aem"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9d3-gO-OWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -273,6 +376,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POW-M2-ixk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1030.5" y="1073"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c8r-Ud-tvE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rlo-iW-dR9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NQG-BS-zT4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1EE-gX-fcu" kind="relationship" relationship="rootViewController" id="Q31-em-qxe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KtH-Rw-qPD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1018.5" y="-329"/>
         </scene>
     </scenes>
 </document>

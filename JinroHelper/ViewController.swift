@@ -12,12 +12,19 @@ import CoreData
 class ViewController: UIViewController {
     var allDataArr = [NSManagedObject]()
     //let mainSize: CGSize = UIScreen.mainScreen().bounds.size
+    @IBOutlet var onePlayButton: MKButton!
+    @IBOutlet var makeVillageButton: MKButton!
+    @IBOutlet var goToVillageButton: MKButton!
+    @IBOutlet var settingButton: MKButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        onePlayButton.alpha = 0.0
+        makeVillageButton.alpha = 0.0
+        goToVillageButton.alpha = 0.0
+        settingButton.alpha = 0.0
+        
         showTitle()
-        
-        
         writeDataIfFirst()
         
     }
@@ -29,13 +36,43 @@ class ViewController: UIViewController {
     
     func showTitle() {
         let titleLabel: UILabel = UILabel(frame: CGRectMake(0,0,400,100))
-        titleLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 200)
+        titleLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: self.view.bounds.height/2-100)
         titleLabel.text = "Jinro Friends"
         titleLabel.font = UIFont(name:"Journal",size:60)
         titleLabel.textColor = UIColor.whiteColor()
         titleLabel.textAlignment = NSTextAlignment.Center
         self.view.addSubview(titleLabel)
+
         
+        
+        UIView.animateWithDuration(2.0,
+            animations: {() -> Void in
+                titleLabel.center = CGPoint(x: self.view.bounds.width/2,y: self.view.bounds.height/2-200)
+                self.showButton()
+                
+                
+            }, completion: {(Bool) -> Void in
+        })
+        
+    }
+    
+    
+    func showButton() {
+        UIView.animateWithDuration(
+            1.0,
+            delay: 1.0,
+            options: UIViewAnimationOptions.CurveEaseIn,
+            animations: {
+                self.onePlayButton.alpha = 1.0
+                self.makeVillageButton.alpha = 1.0
+                self.goToVillageButton.alpha = 1.0
+                self.settingButton.alpha = 1.0
+                
+                },
+            completion:{
+                (value: Bool) in
+            }
+        )
     }
     
     func writeDataIfFirst() {
