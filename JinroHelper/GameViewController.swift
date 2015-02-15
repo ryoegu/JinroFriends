@@ -14,20 +14,28 @@ class GameViewController: UIViewController,UICollectionViewDataSource,UICollecti
     @IBOutlet var seatsCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        self.getWholeArrayFromUD()
+        self.makeCollectionView()
+        
+        
+    }
+    
+    func getWholeArrayFromUD(){
         wholeArray = []
         let saveData = NSUserDefaults.standardUserDefaults()
         wholeArray = saveData.objectForKey("ASSIGNED") as Array
         println(wholeArray)
-        // Do any additional setup after loading the view.
+    }
+    
+    func makeCollectionView() {
         let tapRecognizer = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
         seatsCollectionView.delegate = self
         seatsCollectionView.dataSource = self
         seatsCollectionView.addGestureRecognizer(tapRecognizer)
         //seatsCollectionView.registerClass(Cell(), forCellWithReuseIdentifier: "MY_CELL")
         seatsCollectionView.registerNib(UINib(nibName: "SeatsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SeatsCell")
-        seatsCollectionView.backgroundColor = UIColor.blackColor()
-        
-        
+        //seatsCollectionView.backgroundColor = UIColor.blackColor()
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,12 +48,18 @@ class GameViewController: UIViewController,UICollectionViewDataSource,UICollecti
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        let count = wholeArray.count
+        NSLog("%d", count)
         return wholeArray.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("SeatsCell", forIndexPath: indexPath) as SeatsCollectionViewCell
         return cell
+    }
+    
+    func handleTapGesture(sender:UITapGestureRecognizer){
+        NSLog("hogehogehoge")
     }
     
 
