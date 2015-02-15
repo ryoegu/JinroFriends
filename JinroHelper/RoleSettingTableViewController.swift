@@ -128,7 +128,7 @@ class RoleSettingTableViewController: UITableViewController {
         }
         
         roleArray[indexPath.row][3]=String(roleNumber)
-        NSLog("%@",roleArray)
+        //NSLog("%@",roleArray)
         tableView.reloadData()
         
     }
@@ -159,7 +159,7 @@ class RoleSettingTableViewController: UITableViewController {
         }
         
         roleArray[indexPath.row][3]=String(roleNumber)
-        NSLog("%@",roleArray)
+        //NSLog("%@",roleArray)
         tableView.reloadData()
     }
     @IBAction func startButton(sender: UIBarButtonItem) {

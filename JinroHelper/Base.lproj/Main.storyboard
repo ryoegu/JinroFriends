@@ -363,9 +363,9 @@
                                 <exclude reference="AF8-nU-sw8"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="c3u-o9-0MF"/>
                                 <exclude reference="Hlh-2D-NIT"/>
                                 <exclude reference="LeY-LO-uNT"/>
-                                <exclude reference="c3u-o9-0MF"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -382,9 +382,9 @@
                                 <include reference="AF8-nU-sw8"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="c3u-o9-0MF"/>
                                 <include reference="Hlh-2D-NIT"/>
                                 <include reference="LeY-LO-uNT"/>
-                                <include reference="c3u-o9-0MF"/>
                             </mask>
                         </variation>
                     </view>
@@ -561,9 +561,32 @@
                     <view key="view" contentMode="scaleToFill" id="701-uq-fGm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EP5-Ne-CzR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <collectionViewLayout key="collectionViewLayout" id="B0z-Le-Cx0"/>
+                                <cells/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="351"/>
+                                </variation>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="EP5-Ne-CzR"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="EP5-Ne-CzR"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Game Controller" id="EZb-es-Fhk"/>
+                    <connections>
+                        <outlet property="seatsCollectionView" destination="EP5-Ne-CzR" id="Oe3-4W-EEy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGA-b9-04I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,17 +8,44 @@
 
 import UIKit
 
-class GameViewController: UIViewController {
-
+class GameViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
+    var wholeArray = [AnyObject]()
+    
+    @IBOutlet var seatsCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        wholeArray = []
+        let saveData = NSUserDefaults.standardUserDefaults()
+        wholeArray = saveData.objectForKey("ASSIGNED") as Array
+        println(wholeArray)
         // Do any additional setup after loading the view.
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
+        seatsCollectionView.delegate = self
+        seatsCollectionView.dataSource = self
+        seatsCollectionView.addGestureRecognizer(tapRecognizer)
+        //seatsCollectionView.registerClass(Cell(), forCellWithReuseIdentifier: "MY_CELL")
+        seatsCollectionView.registerNib(UINib(nibName: "SeatsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SeatsCell")
+        seatsCollectionView.backgroundColor = UIColor.blackColor()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return wholeArray.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("SeatsCell", forIndexPath: indexPath) as SeatsCollectionViewCell
+        return cell
     }
     
 
