@@ -27,7 +27,9 @@ class RoleSettingViewController: UIViewController,OTPageScrollViewDataSource,OTP
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         navBarHeight = self.navigationController?.navigationBar.bounds.size.height
-        
+        let saveData = NSUserDefaults.standardUserDefaults()
+        let paddingTop = navBarHeight + statusBarHeight
+        saveData.setObject(Float(paddingTop), forKey: "PADDING")
         
     }
     override func viewWillAppear(animated: Bool) {

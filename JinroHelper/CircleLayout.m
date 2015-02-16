@@ -109,11 +109,13 @@
 -(void)prepareLayout
 {
     [super prepareLayout];
-    
+    NSUserDefaults *saveData = [NSUserDefaults standardUserDefaults];
+    _paddingTop = [[saveData objectForKey:@"PADDING"] floatValue];
+    //_paddingTop = 0;
     CGSize size = self.collectionView.frame.size;
     _cellCount = [[self collectionView] numberOfItemsInSection:0];
-    _center = CGPointMake(size.width / 2.0, size.height / 2.0);
-    _radius = MIN(size.width, size.height) / 2.5;
+    _center = CGPointMake(size.width / 2.0,  (size.height + _paddingTop) / 2.0);
+    _radius = MIN(size.width-40, size.height - _paddingTop) / 2.5;
 }
 
 -(CGSize)collectionViewContentSize
@@ -126,7 +128,7 @@
     UICollectionViewLayoutAttributes* attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:path];
     attributes.size = CGSizeMake(ITEM_SIZE, ITEM_SIZE);
     attributes.center = CGPointMake(_center.x + _radius * cosf(2 * path.item * M_PI / _cellCount),
-                                    _center.y + _radius * sinf(2 * path.item * M_PI / _cellCount));
+                                     _center.y + _radius * sinf(2 * path.item * M_PI / _cellCount));
     return attributes;
 }
 
@@ -208,7 +210,7 @@
         
         // Configure attributes ...
         attributes.alpha = 0.0;
-        attributes.center = CGPointMake(_center.x, _center.y);
+        attributes.center = CGPointMake(_center.x, _center.y - _paddingTop);
         attributes.transform3D = CATransform3DMakeScale(0.1, 0.1, 1.0);
     }
     

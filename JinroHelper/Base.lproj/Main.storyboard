@@ -564,6 +564,9 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EP5-Ne-CzR">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="oaq-ev-M5h"/>
+                                </constraints>
                                 <collectionViewLayout key="collectionViewLayout" id="B0z-Le-Cx0" customClass="CircleLayout"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SeatsCell" id="sqd-4q-CLr">
@@ -574,23 +577,45 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </collectionViewCell>
                                 </cells>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="351"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="oaq-ev-M5h"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="oaq-ev-M5h"/>
+                                    </mask>
                                 </variation>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EP5-Ne-CzR" firstAttribute="top" secondItem="701-uq-fGm" secondAttribute="topMargin" id="6jx-T2-z64"/>
+                            <constraint firstItem="EP5-Ne-CzR" firstAttribute="leading" secondItem="701-uq-fGm" secondAttribute="leadingMargin" constant="-16" id="7Af-FZ-6z6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EP5-Ne-CzR" secondAttribute="trailing" constant="-16" id="isJ-FE-sm9"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="EP5-Ne-CzR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6jx-T2-z64"/>
+                                <exclude reference="7Af-FZ-6z6"/>
+                                <exclude reference="isJ-FE-sm9"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="EP5-Ne-CzR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6jx-T2-z64"/>
+                                <include reference="7Af-FZ-6z6"/>
+                                <include reference="isJ-FE-sm9"/>
                             </mask>
                         </variation>
                     </view>

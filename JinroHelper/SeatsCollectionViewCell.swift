@@ -13,10 +13,10 @@ class SeatsCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.contentView.layer.cornerRadius = 20.0
-        self.contentView.layer.borderWidth = 1.0
-        self.contentView.layer.borderColor = UIColor.whiteColor().CGColor
-        self.contentView.backgroundColor = UIColor.blackColor()
+        self.contentView.layer.cornerRadius = 30.0
+        //self.contentView.layer.borderWidth = 1.0
+        //self.contentView.layer.borderColor = UIColor.whiteColor().CGColor
+        self.contentView.backgroundColor = UIColor.whiteColor()
             
         
     }

@@ -100,4 +100,8 @@
 @property (nonatomic, assign) CGFloat radius;
 @property (nonatomic, assign) NSInteger cellCount;
 
+@property (nonatomic, assign) CGFloat paddingTop;
+
+
+
 @end
