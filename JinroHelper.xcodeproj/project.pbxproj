@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2A0007251A90F1A7001A56B4 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0007241A90F1A7001A56B4 /* CircleLayout.m */; };
-		2A0007291A90F1E9001A56B4 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0007281A90F1E9001A56B4 /* Cell.m */; };
 		2A00072C1A90F5B7001A56B4 /* SeatsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00072A1A90F5B7001A56B4 /* SeatsCollectionViewCell.swift */; };
 		2A00072D1A90F5B7001A56B4 /* SeatsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A00072B1A90F5B7001A56B4 /* SeatsCollectionViewCell.xib */; };
 		2A15B4001A90DBDD002805B9 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A15B3FF1A90DBDD002805B9 /* SCLAlertView.swift */; };
@@ -54,8 +53,6 @@
 /* Begin PBXFileReference section */
 		2A0007231A90F1A7001A56B4 /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
 		2A0007241A90F1A7001A56B4 /* CircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayout.m; sourceTree = "<group>"; };
-		2A0007271A90F1E9001A56B4 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
-		2A0007281A90F1E9001A56B4 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 		2A00072A1A90F5B7001A56B4 /* SeatsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeatsCollectionViewCell.swift; sourceTree = "<group>"; };
 		2A00072B1A90F5B7001A56B4 /* SeatsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeatsCollectionViewCell.xib; sourceTree = "<group>"; };
 		2A15B3FF1A90DBDD002805B9 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
@@ -118,8 +115,6 @@
 			children = (
 				2A0007231A90F1A7001A56B4 /* CircleLayout.h */,
 				2A0007241A90F1A7001A56B4 /* CircleLayout.m */,
-				2A0007271A90F1E9001A56B4 /* Cell.h */,
-				2A0007281A90F1E9001A56B4 /* Cell.m */,
 			);
 			name = CircleLayout;
 			sourceTree = "<group>";
@@ -381,7 +376,6 @@
 				2A3414AF1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift in Sources */,
 				2A2B98141A907BFC00E5B953 /* RoleSettingViewController.swift in Sources */,
 				2A2B981C1A907CB200E5B953 /* OTPageScrollView.m in Sources */,
-				2A0007291A90F1E9001A56B4 /* Cell.m in Sources */,
 				2A2B980E1A9060F800E5B953 /* MKTableViewCell.swift in Sources */,
 				2A0007251A90F1A7001A56B4 /* CircleLayout.m in Sources */,
 				2A00072C1A90F5B7001A56B4 /* SeatsCollectionViewCell.swift in Sources */,

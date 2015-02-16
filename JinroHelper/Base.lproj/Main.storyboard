@@ -591,6 +591,34 @@
                                     </mask>
                                 </variation>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtu-0Q-1ZM" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.50596859100000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="284" y="563" width="62" height="29"/>
+                                </variation>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Lo-8z-5zr">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">みなさん、目を閉じてください。
+この村に、どうやら人の顔をして何気なく暮らしている狼が紛れ込んでしまったようです。人狼と呼びます。
+人狼を殺さないと、みなさんは殺されてしまいます。人狼を見つけ出し、この村の勝利を勝ち取ってください。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                    <rect key="frame" x="55" y="414" width="291" height="128"/>
+                                </variation>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
@@ -601,6 +629,8 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="EP5-Ne-CzR"/>
+                                <exclude reference="qtu-0Q-1ZM"/>
+                                <exclude reference="6Lo-8z-5zr"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="6jx-T2-z64"/>
@@ -611,6 +641,8 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="EP5-Ne-CzR"/>
+                                <include reference="qtu-0Q-1ZM"/>
+                                <include reference="6Lo-8z-5zr"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="6jx-T2-z64"/>

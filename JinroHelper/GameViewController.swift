@@ -71,10 +71,10 @@ class GameViewController: UIViewController,UICollectionViewDataSource,UICollecti
 //            indexPath = [self.folderView indexPathForItemAtPoint:CGPointMake(x,y)];
 
             if tappedCellPath != nil {
-                //                cellCount = cellCount - 1
-                //                seatsCollectionView.performBatchUpdates({
-                //                    self.seatsCollectionView.deleteItemsAtIndexPaths(NSArray(object: tappedCellPath))
-                //                    }, completion: nil)
+                                cellCount = cellCount - 1
+                                seatsCollectionView.performBatchUpdates({
+                                    self.seatsCollectionView.deleteItemsAtIndexPaths(NSArray(object: tappedCellPath))
+                                    }, completion: nil)
                 NSLog("tappedCellPath")
             }else{
                 //                cellCount = cellCount + 1
