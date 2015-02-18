@@ -94,7 +94,7 @@
 
 #import "CircleLayout.h"
 
-#define ITEM_SIZE 70
+#define ITEM_SIZE 60
 
 @interface CircleLayout()
 
@@ -116,6 +116,15 @@
     _cellCount = [[self collectionView] numberOfItemsInSection:0];
     _center = CGPointMake(size.width / 2.0,  (size.height + _paddingTop) / 2.0);
     _radius = MIN(size.width-40, size.height - _paddingTop) / 2.5;
+    NSValue *val = [NSValue valueWithCGPoint:_center];
+    [saveData setValue:val forKey:@"center"];
+    [saveData setFloat:_radius forKey:@"radius"];
+    
+    }
+
+-(void)makeCircle{
+    UIView *circleView = [[UIView alloc] initWithFrame:CGRectMake(_center.x-_radius,_center.y-_radius,_radius*2,_radius*2)];
+    circleView.backgroundColor = [UIColor whiteColor];
 }
 
 -(CGSize)collectionViewContentSize

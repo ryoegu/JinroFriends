@@ -10,13 +10,14 @@ import UIKit
 
 class SeatsCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet var nameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.contentView.layer.cornerRadius = 20.0
+        self.contentView.layer.cornerRadius = 30.0
         //self.contentView.layer.borderWidth = 1.0
         //self.contentView.layer.borderColor = UIColor.whiteColor().CGColor
-        self.contentView.backgroundColor = UIColor.whiteColor()
+        self.contentView.backgroundColor = UIColor.yellowColor()
     }
     
 /*

@@ -23,14 +23,12 @@ class GameViewController: UIViewController,UICollectionViewDataSource,UICollecti
         
         
     }
-    
     func getWholeArrayFromUD(){
         wholeArray = []
         let saveData = NSUserDefaults.standardUserDefaults()
         wholeArray = saveData.objectForKey("ASSIGNED") as Array
         println(wholeArray)
         cellCount = wholeArray.count
-        
     }
     
     func makeCollectionView() {
@@ -41,7 +39,13 @@ class GameViewController: UIViewController,UICollectionViewDataSource,UICollecti
         //seatsCollectionView.registerClass(Cell(), forCellWithReuseIdentifier: "MY_CELL")
         seatsCollectionView.registerNib(UINib(nibName: "SeatsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SeatsCell")
         //seatsCollectionView.backgroundColor = UIColor.blackColor()
+        let saveData = NSUserDefaults.standardUserDefaults()
+        let center: AnyObject? = saveData.valueForKey("center")
+        let radius:CGFloat = saveData.floatForKey("radius")
+        
+        let view:UIView = UIView(frame: CGRectMake(50, 50, radius, radius))
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -58,6 +62,8 @@ class GameViewController: UIViewController,UICollectionViewDataSource,UICollecti
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("SeatsCell", forIndexPath: indexPath) as SeatsCollectionViewCell
+        var wholeArrayWithIndexPath: (AnyObject) = wholeArray[indexPath.row]
+        cell.nameLabel.text = wholeArrayWithIndexPath["player"] as? String
         return cell
     }
     
@@ -71,10 +77,11 @@ class GameViewController: UIViewController,UICollectionViewDataSource,UICollecti
 //            indexPath = [self.folderView indexPathForItemAtPoint:CGPointMake(x,y)];
 
             if tappedCellPath != nil {
-                                cellCount = cellCount - 1
-                                seatsCollectionView.performBatchUpdates({
-                                    self.seatsCollectionView.deleteItemsAtIndexPaths(NSArray(object: tappedCellPath))
-                                    }, completion: nil)
+                //cellCount = cellCount - 1
+                /*seatsCollectionView.performBatchUpdates({
+                    self.seatsCollectionView.deleteItemsAtIndexPaths(NSArray(object: tappedCellPath))
+                    }, completion: nil)
+*/
                 NSLog("tappedCellPath")
             }else{
                 //                cellCount = cellCount + 1
@@ -88,29 +95,7 @@ class GameViewController: UIViewController,UICollectionViewDataSource,UICollecti
     }
     
 }
-/*
-if (sender.state == UIGestureRecognizerStateEnded)
-{
-CGPoint initialPinchPoint = [sender locationInView:self.collectionView];
-NSIndexPath* tappedCellPath = [self.collectionView indexPathForItemAtPoint:initialPinchPoint];
-if (tappedCellPath!=nil)
-{
-self.cellCount = self.cellCount - 1;
-[self.collectionView performBatchUpdates:^{
-[self.collectionView deleteItemsAtIndexPaths:[NSArray arrayWithObject:tappedCellPath]];
 
-} completion:nil];
-}
-else
-{
-self.cellCount = self.cellCount + 1;
-[self.collectionView performBatchUpdates:^{
-[self.collectionView insertItemsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForItem:0 inSection:0]]];
-} completion:nil];
-}
-}
-*/
-//}
 
 
 /*
