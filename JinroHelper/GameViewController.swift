@@ -41,7 +41,7 @@ class GameViewController: UIViewController,UICollectionViewDataSource,UICollecti
         //seatsCollectionView.backgroundColor = UIColor.blackColor()
         let saveData = NSUserDefaults.standardUserDefaults()
         let center: AnyObject? = saveData.valueForKey("center")
-        let radius:CGFloat = saveData.floatForKey("radius")
+        //let radius:CGFloat = saveData.floatForKey("radius")
         
         let view:UIView = UIView(frame: CGRectMake(50, 50, radius, radius))
     }
