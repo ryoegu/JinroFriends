@@ -12,7 +12,6 @@ import CoreData
 class AssignViewController: UIViewController {
 
     @IBOutlet var explainLabel: UILabel!
-    @IBOutlet var nameTextField: UITextField!
     @IBOutlet var assignButton: UIButton!
     @IBOutlet var nextButton: UIButton!
     var roleArray = [[String]]()
@@ -84,7 +83,7 @@ class AssignViewController: UIViewController {
         //println(currentDictionary["screenRole"])
         let roleString = currentDictionary["screenRole"] as? String
         
-        nameTextField.enabled = false
+        //nameTextField.enabled = false
         //プレーヤー名をDictionaryに書き込む
         if playerName == "" {
             playerName = "Player" + String(currentNumber+1)
@@ -100,9 +99,9 @@ class AssignViewController: UIViewController {
     }
 
     @IBAction func nextButtonTapped(sender: UIButton) {
-        nameTextField.enabled = true
+        //nameTextField.enabled = true
         assignButton.setTitle("カードを引く", forState: UIControlState.Normal)
-        nameTextField.text=""
+        //nameTextField.text=""
         
         if currentNumber == wholeNumber-1 {
             sender.setTitle("次へ", forState: UIControlState.Normal)

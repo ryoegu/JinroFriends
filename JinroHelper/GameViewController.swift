@@ -11,6 +11,7 @@ import UIKit
 class GameViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
     var wholeArray = [AnyObject]()
     var cellCount:Int!
+    let saveData = NSUserDefaults.standardUserDefaults()
     
     @IBOutlet var seatsCollectionView: UICollectionView!
     override func viewDidLoad() {
@@ -25,7 +26,6 @@ class GameViewController: UIViewController,UICollectionViewDataSource,UICollecti
     }
     func getWholeArrayFromUD(){
         wholeArray = []
-        let saveData = NSUserDefaults.standardUserDefaults()
         wholeArray = saveData.objectForKey("ASSIGNED") as Array
         println(wholeArray)
         cellCount = wholeArray.count
@@ -39,11 +39,14 @@ class GameViewController: UIViewController,UICollectionViewDataSource,UICollecti
         //seatsCollectionView.registerClass(Cell(), forCellWithReuseIdentifier: "MY_CELL")
         seatsCollectionView.registerNib(UINib(nibName: "SeatsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SeatsCell")
         //seatsCollectionView.backgroundColor = UIColor.blackColor()
-        let saveData = NSUserDefaults.standardUserDefaults()
         let center: AnyObject? = saveData.valueForKey("center")
-        //let radius:CGFloat = saveData.floatForKey("radius")
+        let radius = saveData.floatForKey("radius")
+        let radiusCG = CGFloat(radius)
         
-        let view:UIView = UIView(frame: CGRectMake(50, 50, radius, radius))
+        let view:UIView = UIView(frame: CGRectMake(50, 50, 50, 50))
+        view.layer.backgroundColor = UIColor.whiteColor().CGColor
+        view.layer.cornerRadius = radiusCG/2.0
+        self.view.addSubview(view)
     }
     
     
