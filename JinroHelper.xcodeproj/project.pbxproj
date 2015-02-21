@@ -33,7 +33,6 @@
 		2A5491EC1A5B7AAE0021D860 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5491EB1A5B7AAE0021D860 /* Images.xcassets */; };
 		2A5491EF1A5B7AAE0021D860 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A5491ED1A5B7AAE0021D860 /* LaunchScreen.xib */; };
 		2A5491FB1A5B7AAE0021D860 /* JinroHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5491FA1A5B7AAE0021D860 /* JinroHelperTests.swift */; };
-		2A6778061A98D1B70011DACE /* BBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6777FF1A98D1B70011DACE /* BBCell.m */; };
 		2A6778071A98D1B70011DACE /* BBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6778011A98D1B70011DACE /* BBTableView.m */; };
 		2A6778091A98D1B70011DACE /* BBTableViewInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6778051A98D1B70011DACE /* BBTableViewInterceptor.m */; };
 		2A67780C1A98D4AE0011DACE /* SeatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67780A1A98D4AE0011DACE /* SeatsTableViewCell.swift */; };
@@ -89,8 +88,6 @@
 		2A5491F41A5B7AAE0021D860 /* JinroHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JinroHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5491F91A5B7AAE0021D860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A5491FA1A5B7AAE0021D860 /* JinroHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JinroHelperTests.swift; sourceTree = "<group>"; };
-		2A6777FE1A98D1B70011DACE /* BBCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCell.h; sourceTree = "<group>"; };
-		2A6777FF1A98D1B70011DACE /* BBCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCell.m; sourceTree = "<group>"; };
 		2A6778001A98D1B70011DACE /* BBTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTableView.h; sourceTree = "<group>"; };
 		2A6778011A98D1B70011DACE /* BBTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTableView.m; sourceTree = "<group>"; };
 		2A6778041A98D1B70011DACE /* BBTableViewInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTableViewInterceptor.h; sourceTree = "<group>"; };
@@ -245,21 +242,11 @@
 		2A6777FC1A98D1B70011DACE /* BBTableView */ = {
 			isa = PBXGroup;
 			children = (
-				2A6777FD1A98D1B70011DACE /* BBCell */,
 				2A6778001A98D1B70011DACE /* BBTableView.h */,
 				2A6778011A98D1B70011DACE /* BBTableView.m */,
 				2A6778031A98D1B70011DACE /* Interceptor */,
 			);
 			path = BBTableView;
-			sourceTree = "<group>";
-		};
-		2A6777FD1A98D1B70011DACE /* BBCell */ = {
-			isa = PBXGroup;
-			children = (
-				2A6777FE1A98D1B70011DACE /* BBCell.h */,
-				2A6777FF1A98D1B70011DACE /* BBCell.m */,
-			);
-			path = BBCell;
 			sourceTree = "<group>";
 		};
 		2A6778031A98D1B70011DACE /* Interceptor */ = {
@@ -439,7 +426,6 @@
 				2A67780C1A98D4AE0011DACE /* SeatsTableViewCell.swift in Sources */,
 				2AE3869C1A8BB305003CB8B7 /* AssignViewController.swift in Sources */,
 				2A15B4001A90DBDD002805B9 /* SCLAlertView.swift in Sources */,
-				2A6778061A98D1B70011DACE /* BBCell.m in Sources */,
 				2A3414B31A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

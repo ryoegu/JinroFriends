@@ -51,6 +51,7 @@ class GameViewController: UIViewController,UITableViewDataSource,UITableViewDele
         [mTableView reloadData];
 */        //seatsTableView.addGestureRecognizer(tapRecognizer)
         seatsTableView.registerNib(UINib(nibName: "SeatsTableViewCell", bundle: nil), forCellReuseIdentifier: "SeatsCell")
+        
         /*
         let center: AnyObject? = saveData.valueForKey("center")
         let radius = saveData.floatForKey("radius")

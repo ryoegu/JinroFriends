@@ -64,7 +64,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="Rlo-iW-dR9" kind="show" id="Iu5-bY-eey"/>
+                                    <segue destination="Rlo-iW-dR9" kind="presentation" modalTransitionStyle="crossDissolve" id="Iu5-bY-eey"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E96-X3-D5Z" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
@@ -490,7 +490,9 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="役職を決めます" id="KrP-pR-qMc"/>
+                    <navigationItem key="navigationItem" title="役職を決めます" id="KrP-pR-qMc">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="gDr-W1-Ihc"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="assignButton" destination="S2n-bT-4f3" id="6k4-lv-PiH"/>
                         <outlet property="nextButton" destination="16O-oX-NBj" id="p51-6n-Ray"/>
