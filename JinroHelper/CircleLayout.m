@@ -116,9 +116,7 @@
     _cellCount = [[self collectionView] numberOfItemsInSection:0];
     _center = CGPointMake(size.width / 2.0,  (size.height + _paddingTop) / 2.0);
     _radius = MIN(size.width-40, size.height - _paddingTop) / 2.5;
-    NSValue *val = [NSValue valueWithCGPoint:_center];
-    [saveData setValue:val forKey:@"center"];
-    [saveData setFloat:_radius forKey:@"radius"];
+
     
     }
 

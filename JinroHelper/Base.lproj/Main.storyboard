@@ -603,7 +603,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Game Controller" id="EZb-es-Fhk"/>
                     <connections>
-                        <outlet property="seatsCollectionView" destination="EP5-Ne-CzR" id="Oe3-4W-EEy"/>
+                        <outlet property="seatsCollectionView" destination="EP5-Ne-CzR" id="gH5-Tr-Xlo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGA-b9-04I" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -11,7 +11,9 @@ import UIKit
 class GameViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
     var wholeArray = [AnyObject]()
     var cellCount:Int!
-    let saveData = NSUserDefaults.standardUserDefaults()
+    var saveData = NSUserDefaults.standardUserDefaults()
+    
+    var manager: BackgroundMusicManager?        // 再生管理クラス
     
     @IBOutlet var seatsCollectionView: UICollectionView!
     override func viewDidLoad() {
@@ -20,6 +22,12 @@ class GameViewController: UIViewController,UICollectionViewDataSource,UICollecti
         
         self.getWholeArrayFromUD()
         self.makeCollectionView()
+        
+        // 再生管理クラス生成
+        manager = BackgroundMusicManager()
+        // 管理クラスに再生／一時停止を伝達
+        manager!.playOrPause()
+
         
         
         
@@ -36,17 +44,12 @@ class GameViewController: UIViewController,UICollectionViewDataSource,UICollecti
         seatsCollectionView.delegate = self
         seatsCollectionView.dataSource = self
         seatsCollectionView.addGestureRecognizer(tapRecognizer)
-        //seatsCollectionView.registerClass(Cell(), forCellWithReuseIdentifier: "MY_CELL")
         seatsCollectionView.registerNib(UINib(nibName: "SeatsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SeatsCell")
-        //seatsCollectionView.backgroundColor = UIColor.blackColor()
+        /*
         let center: AnyObject? = saveData.valueForKey("center")
         let radius = saveData.floatForKey("radius")
         let radiusCG = CGFloat(radius)
-        
-        let view:UIView = UIView(frame: CGRectMake(50, 50, 50, 50))
-        view.layer.backgroundColor = UIColor.whiteColor().CGColor
-        view.layer.cornerRadius = radiusCG/2.0
-        self.view.addSubview(view)
+        */
     }
     
     
