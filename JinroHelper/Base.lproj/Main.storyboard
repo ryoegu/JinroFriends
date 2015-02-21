@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -178,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124.5" y="271"/>
+            <point key="canvasLocation" x="18" y="200"/>
         </scene>
         <!--人数設定-->
         <scene sceneID="Slb-Eq-uv2">
@@ -512,35 +513,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EP5-Ne-CzR">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="oaq-ev-M5h"/>
-                                </constraints>
-                                <collectionViewLayout key="collectionViewLayout" id="B0z-Le-Cx0" customClass="CircleLayout"/>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SeatsCell" id="sqd-4q-CLr">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </collectionViewCell>
-                                </cells>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="oaq-ev-M5h"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="oaq-ev-M5h"/>
-                                    </mask>
-                                </variation>
-                            </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtu-0Q-1ZM" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.50596859100000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -569,41 +541,68 @@
                                     <rect key="frame" x="55" y="414" width="291" height="128"/>
                                 </variation>
                             </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="v46-ah-5HQ" customClass="BBTableView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="v46-ah-5HQ" secondAttribute="height" multiplier="100:97" id="CmF-iK-ZHZ"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SeatsCell" rowHeight="50" id="nKp-jk-0kw">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nKp-jk-0kw" id="0VG-Z0-vvf">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CmF-iK-ZHZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="CmF-iK-ZHZ"/>
+                                    </mask>
+                                </variation>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="EP5-Ne-CzR" firstAttribute="top" secondItem="701-uq-fGm" secondAttribute="topMargin" id="6jx-T2-z64"/>
-                            <constraint firstItem="EP5-Ne-CzR" firstAttribute="leading" secondItem="701-uq-fGm" secondAttribute="leadingMargin" constant="-16" id="7Af-FZ-6z6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="EP5-Ne-CzR" secondAttribute="trailing" constant="-16" id="isJ-FE-sm9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v46-ah-5HQ" secondAttribute="trailing" constant="-16" id="V1w-AZ-DKJ"/>
+                            <constraint firstItem="v46-ah-5HQ" firstAttribute="leading" secondItem="701-uq-fGm" secondAttribute="leadingMargin" constant="-16" id="lZ1-jb-RkB"/>
+                            <constraint firstItem="v46-ah-5HQ" firstAttribute="top" secondItem="701-uq-fGm" secondAttribute="topMargin" id="zH3-Bo-u5I"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="EP5-Ne-CzR"/>
                                 <exclude reference="qtu-0Q-1ZM"/>
                                 <exclude reference="6Lo-8z-5zr"/>
+                                <exclude reference="v46-ah-5HQ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="6jx-T2-z64"/>
-                                <exclude reference="7Af-FZ-6z6"/>
-                                <exclude reference="isJ-FE-sm9"/>
+                                <exclude reference="V1w-AZ-DKJ"/>
+                                <exclude reference="lZ1-jb-RkB"/>
+                                <exclude reference="zH3-Bo-u5I"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="EP5-Ne-CzR"/>
                                 <include reference="qtu-0Q-1ZM"/>
                                 <include reference="6Lo-8z-5zr"/>
+                                <include reference="v46-ah-5HQ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="6jx-T2-z64"/>
-                                <include reference="7Af-FZ-6z6"/>
-                                <include reference="isJ-FE-sm9"/>
+                                <include reference="V1w-AZ-DKJ"/>
+                                <include reference="lZ1-jb-RkB"/>
+                                <include reference="zH3-Bo-u5I"/>
                             </mask>
                         </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Game Controller" id="EZb-es-Fhk"/>
                     <connections>
-                        <outlet property="seatsCollectionView" destination="EP5-Ne-CzR" id="gH5-Tr-Xlo"/>
+                        <outlet property="seatsTableView" destination="v46-ah-5HQ" id="IgN-z5-IIm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGA-b9-04I" userLabel="First Responder" sceneMemberID="firstResponder"/>

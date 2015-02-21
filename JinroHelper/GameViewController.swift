@@ -8,28 +8,26 @@
 
 import UIKit
 
-class GameViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
+class GameViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     var wholeArray = [AnyObject]()
     var cellCount:Int!
     var saveData = NSUserDefaults.standardUserDefaults()
     
-    var manager: BackgroundMusicManager?        // 再生管理クラス
+    //var manager: BackgroundMusicManager?        // 再生管理クラス
     
-    @IBOutlet var seatsCollectionView: UICollectionView!
+    @IBOutlet var seatsTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         self.getWholeArrayFromUD()
-        self.makeCollectionView()
+        self.makeTableView()
         
-        // 再生管理クラス生成
+        /*// 再生管理クラス生成
         manager = BackgroundMusicManager()
         // 管理クラスに再生／一時停止を伝達
-        manager!.playOrPause()
+        manager!.playOrPause()*/
 
-        
-        
         
     }
     func getWholeArrayFromUD(){
@@ -39,12 +37,20 @@ class GameViewController: UIViewController,UICollectionViewDataSource,UICollecti
         cellCount = wholeArray.count
     }
     
-    func makeCollectionView() {
+    func makeTableView() {
         let tapRecognizer = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
-        seatsCollectionView.delegate = self
-        seatsCollectionView.dataSource = self
-        seatsCollectionView.addGestureRecognizer(tapRecognizer)
-        seatsCollectionView.registerNib(UINib(nibName: "SeatsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SeatsCell")
+        seatsTableView.delegate = self
+        seatsTableView.dataSource = self
+        
+        seatsTableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        seatsTableView.opaque=false
+        seatsTableView.showsHorizontalScrollIndicator=false
+        seatsTableView.showsVerticalScrollIndicator=true
+
+/*        [mTableView setEnableInfiniteScrolling:[sender isOn]];
+        [mTableView reloadData];
+*/        //seatsTableView.addGestureRecognizer(tapRecognizer)
+        seatsTableView.registerNib(UINib(nibName: "SeatsTableViewCell", bundle: nil), forCellReuseIdentifier: "SeatsCell")
         /*
         let center: AnyObject? = saveData.valueForKey("center")
         let radius = saveData.floatForKey("radius")
@@ -58,28 +64,35 @@ class GameViewController: UIViewController,UICollectionViewDataSource,UICollecti
         // Dispose of any resources that can be recreated.
     }
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cellCount
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    /*func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("SeatsCell", forIndexPath: indexPath) as SeatsCollectionViewCell
         var wholeArrayWithIndexPath: (AnyObject) = wholeArray[indexPath.row]
         cell.nameLabel.text = wholeArrayWithIndexPath["player"] as? String
         return cell
+    }*/
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("SeatsCell", forIndexPath: indexPath) as SeatsTableViewCell
+        var wholeArrayWithIndexPath: (AnyObject) = wholeArray[indexPath.row]
+        NSLog("indexPath:%d %@",indexPath.row, wholeArrayWithIndexPath["player"]? as String)
+        cell.nameLabel.text = wholeArrayWithIndexPath["player"] as? String
+        return cell
     }
     
-    func handleTapGesture(sender:UITapGestureRecognizer){
+    /*func handleTapGesture(sender:UITapGestureRecognizer){
         NSLog("hogehogehoge")
         if sender.state == UIGestureRecognizerState.Ended {
-            var initialPinchPoint:CGPoint = sender.locationInView(seatsCollectionView)
+            var initialPinchPoint:CGPoint = sender.locationInView(seatsTableView)
             var tappedCellPath:NSIndexPath!
             tappedCellPath = nil
-            tappedCellPath = self.seatsCollectionView?.indexPathForItemAtPoint(initialPinchPoint)?
+            tappedCellPath = self.seatsTableView?.indexPathForItemAtPoint(initialPinchPoint)?
 //            indexPath = [self.folderView indexPathForItemAtPoint:CGPointMake(x,y)];
 
             if tappedCellPath != nil {
@@ -98,7 +111,7 @@ class GameViewController: UIViewController,UICollectionViewDataSource,UICollecti
             }
 
         }
-    }
+    }*/
     
 }
 

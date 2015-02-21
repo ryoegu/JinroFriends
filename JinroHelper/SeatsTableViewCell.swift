@@ -1,18 +1,16 @@
 //
-//  RoleSettingTableViewCell.swift
+//  SeatsTableViewCell.swift
 //  JinroHelper
 //
-//  Created by Ryo Eguchi on 2015/02/06.
+//  Created by Ryo Eguchi on 2015/02/21.
 //  Copyright (c) 2015年 Ryo Eguchi. All rights reserved.
 //
 
 import UIKit
 
-class RoleSettingTableViewCell: UITableViewCell {
-    @IBOutlet var roleLabel: UILabel!
-    @IBOutlet var roleNumberLabel: UILabel!
-    @IBOutlet var plusButton: UIButton!
-    @IBOutlet var minusButton: UIButton!
+class SeatsTableViewCell: UITableViewCell {
+
+    @IBOutlet var nameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

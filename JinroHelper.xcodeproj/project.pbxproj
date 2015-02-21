@@ -23,9 +23,6 @@
 		2A2B981C1A907CB200E5B953 /* OTPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98171A907CB200E5B953 /* OTPageScrollView.m */; };
 		2A2B981D1A907CB200E5B953 /* OTPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98191A907CB200E5B953 /* OTPageView.m */; };
 		2A2B98241A90CE6100E5B953 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98231A90CE6100E5B953 /* GameViewController.swift */; };
-		2A3414AC1A84CDAE0041DE12 /* RoleSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3414AB1A84CDAE0041DE12 /* RoleSettingTableViewController.swift */; };
-		2A3414AF1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3414AD1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift */; };
-		2A3414B01A84D3FB0041DE12 /* RoleSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3414AE1A84D3FB0041DE12 /* RoleSettingTableViewCell.xib */; };
 		2A3414B31A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3414B11A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift */; };
 		2A3414B41A84F5DE0041DE12 /* RolePurchaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3414B21A84F5DE0041DE12 /* RolePurchaseTableViewCell.xib */; };
 		2A4F13D51A989FF100B0E3B3 /* BackgroundMusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F13D41A989FF100B0E3B3 /* BackgroundMusicManager.swift */; };
@@ -36,6 +33,11 @@
 		2A5491EC1A5B7AAE0021D860 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5491EB1A5B7AAE0021D860 /* Images.xcassets */; };
 		2A5491EF1A5B7AAE0021D860 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A5491ED1A5B7AAE0021D860 /* LaunchScreen.xib */; };
 		2A5491FB1A5B7AAE0021D860 /* JinroHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5491FA1A5B7AAE0021D860 /* JinroHelperTests.swift */; };
+		2A6778061A98D1B70011DACE /* BBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6777FF1A98D1B70011DACE /* BBCell.m */; };
+		2A6778071A98D1B70011DACE /* BBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6778011A98D1B70011DACE /* BBTableView.m */; };
+		2A6778091A98D1B70011DACE /* BBTableViewInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6778051A98D1B70011DACE /* BBTableViewInterceptor.m */; };
+		2A67780C1A98D4AE0011DACE /* SeatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67780A1A98D4AE0011DACE /* SeatsTableViewCell.swift */; };
+		2A67780D1A98D4AE0011DACE /* SeatsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A67780B1A98D4AE0011DACE /* SeatsTableViewCell.xib */; };
 		2A708AAB1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A708AAA1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift */; };
 		2A708AE21A8B0CF9003B1085 /* JinroHelper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A708AE01A8B0CF9003B1085 /* JinroHelper.xcdatamodeld */; };
 		2A708AE41A8B0E20003B1085 /* RoleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A708AE31A8B0E20003B1085 /* RoleData.swift */; };
@@ -73,9 +75,6 @@
 		2A2B98181A907CB200E5B953 /* OTPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPageView.h; sourceTree = "<group>"; };
 		2A2B98191A907CB200E5B953 /* OTPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPageView.m; sourceTree = "<group>"; };
 		2A2B98231A90CE6100E5B953 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		2A3414AB1A84CDAE0041DE12 /* RoleSettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleSettingTableViewController.swift; sourceTree = "<group>"; };
-		2A3414AD1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleSettingTableViewCell.swift; sourceTree = "<group>"; };
-		2A3414AE1A84D3FB0041DE12 /* RoleSettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoleSettingTableViewCell.xib; sourceTree = "<group>"; };
 		2A3414B11A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RolePurchaseTableViewCell.swift; sourceTree = "<group>"; };
 		2A3414B21A84F5DE0041DE12 /* RolePurchaseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RolePurchaseTableViewCell.xib; sourceTree = "<group>"; };
 		2A4F13D41A989FF100B0E3B3 /* BackgroundMusicManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundMusicManager.swift; sourceTree = "<group>"; };
@@ -90,6 +89,14 @@
 		2A5491F41A5B7AAE0021D860 /* JinroHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JinroHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5491F91A5B7AAE0021D860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A5491FA1A5B7AAE0021D860 /* JinroHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JinroHelperTests.swift; sourceTree = "<group>"; };
+		2A6777FE1A98D1B70011DACE /* BBCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCell.h; sourceTree = "<group>"; };
+		2A6777FF1A98D1B70011DACE /* BBCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCell.m; sourceTree = "<group>"; };
+		2A6778001A98D1B70011DACE /* BBTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTableView.h; sourceTree = "<group>"; };
+		2A6778011A98D1B70011DACE /* BBTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTableView.m; sourceTree = "<group>"; };
+		2A6778041A98D1B70011DACE /* BBTableViewInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTableViewInterceptor.h; sourceTree = "<group>"; };
+		2A6778051A98D1B70011DACE /* BBTableViewInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTableViewInterceptor.m; sourceTree = "<group>"; };
+		2A67780A1A98D4AE0011DACE /* SeatsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeatsTableViewCell.swift; sourceTree = "<group>"; };
+		2A67780B1A98D4AE0011DACE /* SeatsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeatsTableViewCell.xib; sourceTree = "<group>"; };
 		2A708AAA1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RolePurchaseTableViewController.swift; sourceTree = "<group>"; };
 		2A708AE11A8B0CF9003B1085 /* JinroHelper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JinroHelper.xcdatamodel; sourceTree = "<group>"; };
 		2A708AE31A8B0E20003B1085 /* RoleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoleData.swift; path = ../RoleData.swift; sourceTree = "<group>"; };
@@ -135,6 +142,7 @@
 		2A15B4011A90DBE5002805B9 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				2A6777FC1A98D1B70011DACE /* BBTableView */,
 				2A4F13D61A98A00600B0E3B3 /* コールドフィッシュ.mp3 */,
 				2A0007261A90F1AD001A56B4 /* CircleLayout */,
 				2A2B98011A9060F800E5B953 /* MaterialKit */,
@@ -234,6 +242,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2A6777FC1A98D1B70011DACE /* BBTableView */ = {
+			isa = PBXGroup;
+			children = (
+				2A6777FD1A98D1B70011DACE /* BBCell */,
+				2A6778001A98D1B70011DACE /* BBTableView.h */,
+				2A6778011A98D1B70011DACE /* BBTableView.m */,
+				2A6778031A98D1B70011DACE /* Interceptor */,
+			);
+			path = BBTableView;
+			sourceTree = "<group>";
+		};
+		2A6777FD1A98D1B70011DACE /* BBCell */ = {
+			isa = PBXGroup;
+			children = (
+				2A6777FE1A98D1B70011DACE /* BBCell.h */,
+				2A6777FF1A98D1B70011DACE /* BBCell.m */,
+			);
+			path = BBCell;
+			sourceTree = "<group>";
+		};
+		2A6778031A98D1B70011DACE /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				2A6778041A98D1B70011DACE /* BBTableViewInterceptor.h */,
+				2A6778051A98D1B70011DACE /* BBTableViewInterceptor.m */,
+			);
+			path = Interceptor;
+			sourceTree = "<group>";
+		};
 		2AE3869D1A8C43B5003CB8B7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,8 +288,8 @@
 			children = (
 				2A5491E81A5B7AAE0021D860 /* Main.storyboard */,
 				2A00072B1A90F5B7001A56B4 /* SeatsCollectionViewCell.xib */,
-				2A3414AE1A84D3FB0041DE12 /* RoleSettingTableViewCell.xib */,
 				2A3414B21A84F5DE0041DE12 /* RolePurchaseTableViewCell.xib */,
+				2A67780B1A98D4AE0011DACE /* SeatsTableViewCell.xib */,
 				2A5491ED1A5B7AAE0021D860 /* LaunchScreen.xib */,
 			);
 			name = View;
@@ -262,14 +299,13 @@
 			isa = PBXGroup;
 			children = (
 				2A5491E61A5B7AAE0021D860 /* ViewController.swift */,
-				2A3414AB1A84CDAE0041DE12 /* RoleSettingTableViewController.swift */,
 				2A708AAA1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift */,
 				2A3414B11A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift */,
-				2A3414AD1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift */,
 				2A00072A1A90F5B7001A56B4 /* SeatsCollectionViewCell.swift */,
 				2AE3869B1A8BB305003CB8B7 /* AssignViewController.swift */,
 				2A2B98131A907BFC00E5B953 /* RoleSettingViewController.swift */,
 				2A2B98231A90CE6100E5B953 /* GameViewController.swift */,
+				2A67780A1A98D4AE0011DACE /* SeatsTableViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -355,8 +391,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2B98111A90666900E5B953 /* JOURNAL.TTF in Resources */,
-				2A3414B01A84D3FB0041DE12 /* RoleSettingTableViewCell.xib in Resources */,
 				2A5491EA1A5B7AAE0021D860 /* Main.storyboard in Resources */,
+				2A67780D1A98D4AE0011DACE /* SeatsTableViewCell.xib in Resources */,
 				2A5491EF1A5B7AAE0021D860 /* LaunchScreen.xib in Resources */,
 				2A00072D1A90F5B7001A56B4 /* SeatsCollectionViewCell.xib in Resources */,
 				2A5491EC1A5B7AAE0021D860 /* Images.xcassets in Resources */,
@@ -380,7 +416,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2B980A1A9060F800E5B953 /* MKColor.swift in Sources */,
-				2A3414AF1A84D3FB0041DE12 /* RoleSettingTableViewCell.swift in Sources */,
 				2A2B98141A907BFC00E5B953 /* RoleSettingViewController.swift in Sources */,
 				2A2B981C1A907CB200E5B953 /* OTPageScrollView.m in Sources */,
 				2A2B980E1A9060F800E5B953 /* MKTableViewCell.swift in Sources */,
@@ -392,16 +427,19 @@
 				2A5491E71A5B7AAE0021D860 /* ViewController.swift in Sources */,
 				2A4F13D51A989FF100B0E3B3 /* BackgroundMusicManager.swift in Sources */,
 				2A708AE21A8B0CF9003B1085 /* JinroHelper.xcdatamodeld in Sources */,
-				2A3414AC1A84CDAE0041DE12 /* RoleSettingTableViewController.swift in Sources */,
+				2A6778071A98D1B70011DACE /* BBTableView.m in Sources */,
 				2A5491E51A5B7AAE0021D860 /* AppDelegate.swift in Sources */,
 				2A2B980C1A9060F800E5B953 /* MKLabel.swift in Sources */,
 				2A2B981D1A907CB200E5B953 /* OTPageView.m in Sources */,
 				2A708AE41A8B0E20003B1085 /* RoleData.swift in Sources */,
 				2A708AAB1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift in Sources */,
 				2A2B98091A9060F800E5B953 /* MKButton.swift in Sources */,
+				2A6778091A98D1B70011DACE /* BBTableViewInterceptor.m in Sources */,
 				2A2B980F1A9060F800E5B953 /* MKTextField.swift in Sources */,
+				2A67780C1A98D4AE0011DACE /* SeatsTableViewCell.swift in Sources */,
 				2AE3869C1A8BB305003CB8B7 /* AssignViewController.swift in Sources */,
 				2A15B4001A90DBDD002805B9 /* SCLAlertView.swift in Sources */,
+				2A6778061A98D1B70011DACE /* BBCell.m in Sources */,
 				2A3414B31A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
