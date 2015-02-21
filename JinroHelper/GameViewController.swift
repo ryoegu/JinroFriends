@@ -41,7 +41,6 @@ class GameViewController: UIViewController,UITableViewDataSource,UITableViewDele
         let tapRecognizer = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
         seatsTableView.delegate = self
         seatsTableView.dataSource = self
-        
         seatsTableView.separatorStyle = UITableViewCellSeparatorStyle.None
         seatsTableView.opaque=false
         seatsTableView.showsHorizontalScrollIndicator=false

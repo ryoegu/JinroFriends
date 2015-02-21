@@ -36,7 +36,6 @@ class RoleSettingViewController: UIViewController,OTPageScrollViewDataSource,OTP
         super.viewWillAppear(animated)
         getDataFromCoreData()
         makeRoleScrollView()
-        
     }
     
     
