@@ -32,6 +32,15 @@
 		2A5491EC1A5B7AAE0021D860 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5491EB1A5B7AAE0021D860 /* Images.xcassets */; };
 		2A5491EF1A5B7AAE0021D860 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A5491ED1A5B7AAE0021D860 /* LaunchScreen.xib */; };
 		2A5491FB1A5B7AAE0021D860 /* JinroHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5491FA1A5B7AAE0021D860 /* JinroHelperTests.swift */; };
+		2A5C09431A99C64700365A91 /* 人狼150.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A5C09401A99C64700365A91 /* 人狼150.png */; };
+		2A5C09441A99C64700365A91 /* 村人150.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A5C09411A99C64700365A91 /* 村人150.png */; };
+		2A5C09451A99C64700365A91 /* 第3勢力150.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A5C09421A99C64700365A91 /* 第3勢力150.png */; };
+		2A5C09471A99C77900365A91 /* RoleNumberSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C09461A99C77900365A91 /* RoleNumberSettingViewController.swift */; };
+		2A5C094C1A99C9D200365A91 /* frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A5C09481A99C9D200365A91 /* frame.png */; };
+		2A5C094D1A99C9D200365A91 /* 人狼150s.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A5C09491A99C9D200365A91 /* 人狼150s.png */; };
+		2A5C094E1A99C9D200365A91 /* 村人150s.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A5C094A1A99C9D200365A91 /* 村人150s.png */; };
+		2A5C094F1A99C9D200365A91 /* 第3勢力150s.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A5C094B1A99C9D200365A91 /* 第3勢力150s.png */; };
+		2A5C09511A99D44E00365A91 /* RoleSettingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C09501A99D44E00365A91 /* RoleSettingCollectionViewCell.swift */; };
 		2A6778071A98D1B70011DACE /* BBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6778011A98D1B70011DACE /* BBTableView.m */; };
 		2A6778091A98D1B70011DACE /* BBTableViewInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6778051A98D1B70011DACE /* BBTableViewInterceptor.m */; };
 		2A67780C1A98D4AE0011DACE /* SeatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67780A1A98D4AE0011DACE /* SeatsTableViewCell.swift */; };
@@ -99,6 +108,15 @@
 		2A5491F41A5B7AAE0021D860 /* JinroHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JinroHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5491F91A5B7AAE0021D860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A5491FA1A5B7AAE0021D860 /* JinroHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JinroHelperTests.swift; sourceTree = "<group>"; };
+		2A5C09401A99C64700365A91 /* 人狼150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人狼150.png"; sourceTree = "<group>"; };
+		2A5C09411A99C64700365A91 /* 村人150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "村人150.png"; sourceTree = "<group>"; };
+		2A5C09421A99C64700365A91 /* 第3勢力150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "第3勢力150.png"; sourceTree = "<group>"; };
+		2A5C09461A99C77900365A91 /* RoleNumberSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleNumberSettingViewController.swift; sourceTree = "<group>"; };
+		2A5C09481A99C9D200365A91 /* frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame.png; sourceTree = "<group>"; };
+		2A5C09491A99C9D200365A91 /* 人狼150s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人狼150s.png"; sourceTree = "<group>"; };
+		2A5C094A1A99C9D200365A91 /* 村人150s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "村人150s.png"; sourceTree = "<group>"; };
+		2A5C094B1A99C9D200365A91 /* 第3勢力150s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "第3勢力150s.png"; sourceTree = "<group>"; };
+		2A5C09501A99D44E00365A91 /* RoleSettingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleSettingCollectionViewCell.swift; sourceTree = "<group>"; };
 		2A6778001A98D1B70011DACE /* BBTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTableView.h; sourceTree = "<group>"; };
 		2A6778011A98D1B70011DACE /* BBTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTableView.m; sourceTree = "<group>"; };
 		2A6778041A98D1B70011DACE /* BBTableViewInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTableViewInterceptor.h; sourceTree = "<group>"; };
@@ -228,7 +246,6 @@
 				2AE3869E1A8C43C0003CB8B7 /* View */,
 				2AE3869D1A8C43B5003CB8B7 /* Model */,
 				2A5491EB1A5B7AAE0021D860 /* Images.xcassets */,
-				2ADD53911A99B87800C6B3A7 /* icons */,
 				2A15B4011A90DBE5002805B9 /* Libraries */,
 				2ADD538A1A98F45E00C6B3A7 /* fonts */,
 				2ADD53881A98EBAC00C6B3A7 /* Music */,
@@ -240,6 +257,8 @@
 		2A5491E21A5B7AAE0021D860 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2A5C093F1A99C64700365A91 /* サムネイル */,
+				2ADD53911A99B87800C6B3A7 /* icons */,
 				2A5491E31A5B7AAE0021D860 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -260,6 +279,20 @@
 				2A5491F91A5B7AAE0021D860 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A5C093F1A99C64700365A91 /* サムネイル */ = {
+			isa = PBXGroup;
+			children = (
+				2A5C09481A99C9D200365A91 /* frame.png */,
+				2A5C09491A99C9D200365A91 /* 人狼150s.png */,
+				2A5C094A1A99C9D200365A91 /* 村人150s.png */,
+				2A5C094B1A99C9D200365A91 /* 第3勢力150s.png */,
+				2A5C09401A99C64700365A91 /* 人狼150.png */,
+				2A5C09411A99C64700365A91 /* 村人150.png */,
+				2A5C09421A99C64700365A91 /* 第3勢力150.png */,
+			);
+			path = "サムネイル";
 			sourceTree = "<group>";
 		};
 		2A6777FC1A98D1B70011DACE /* BBTableView */ = {
@@ -351,6 +384,8 @@
 				2A2B98131A907BFC00E5B953 /* RoleSettingViewController.swift */,
 				2A2B98231A90CE6100E5B953 /* GameViewController.swift */,
 				2A67780A1A98D4AE0011DACE /* SeatsTableViewCell.swift */,
+				2A5C09461A99C77900365A91 /* RoleNumberSettingViewController.swift */,
+				2A5C09501A99D44E00365A91 /* RoleSettingCollectionViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -454,6 +489,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5C094E1A99C9D200365A91 /* 村人150s.png in Resources */,
 				2A5491EA1A5B7AAE0021D860 /* Main.storyboard in Resources */,
 				2ADD53B01A99B87800C6B3A7 /* Icon-Small@2x.png in Resources */,
 				2A67780D1A98D4AE0011DACE /* SeatsTableViewCell.xib in Resources */,
@@ -462,15 +498,21 @@
 				2ADD53AA1A99B87800C6B3A7 /* Icon-40@3x.png in Resources */,
 				2A00072D1A90F5B7001A56B4 /* SeatsCollectionViewCell.xib in Resources */,
 				2ADD53AF1A99B87800C6B3A7 /* Icon-Small.png in Resources */,
+				2A5C09451A99C64700365A91 /* 第3勢力150.png in Resources */,
+				2A5C09431A99C64700365A91 /* 人狼150.png in Resources */,
 				2ADD53AC1A99B87800C6B3A7 /* Icon-60@3x.png in Resources */,
+				2A5C094F1A99C9D200365A91 /* 第3勢力150s.png in Resources */,
 				2ADD538D1A98F45E00C6B3A7 /* FOT-BudoStd-L.otf in Resources */,
+				2A5C094D1A99C9D200365A91 /* 人狼150s.png in Resources */,
 				2A5491EC1A5B7AAE0021D860 /* Images.xcassets in Resources */,
 				2ADD538E1A98F45E00C6B3A7 /* JOURNAL.TTF in Resources */,
 				2A4F13D71A98A00600B0E3B3 /* コールドフィッシュ.mp3 in Resources */,
 				2ADD53A91A99B87800C6B3A7 /* Icon-40@2x.png in Resources */,
 				2ADD53A81A99B87800C6B3A7 /* Icon-40.png in Resources */,
 				2ADD53B51A99B87800C6B3A7 /* Icon-Small-50.png in Resources */,
+				2A5C094C1A99C9D200365A91 /* frame.png in Resources */,
 				2ADD53B61A99B87800C6B3A7 /* Icon-Small-50@2x.png in Resources */,
+				2A5C09441A99C64700365A91 /* 村人150.png in Resources */,
 				2ADD53B11A99B87800C6B3A7 /* Icon-Small@3x.png in Resources */,
 				2A3414B41A84F5DE0041DE12 /* RolePurchaseTableViewCell.xib in Resources */,
 			);
@@ -541,10 +583,12 @@
 				2A2B980C1A9060F800E5B953 /* MKLabel.swift in Sources */,
 				2A2B981D1A907CB200E5B953 /* OTPageView.m in Sources */,
 				2A708AAB1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift in Sources */,
+				2A5C09511A99D44E00365A91 /* RoleSettingCollectionViewCell.swift in Sources */,
 				2A2B98091A9060F800E5B953 /* MKButton.swift in Sources */,
 				2A6778091A98D1B70011DACE /* BBTableViewInterceptor.m in Sources */,
 				2A2B980F1A9060F800E5B953 /* MKTextField.swift in Sources */,
 				2A67780C1A98D4AE0011DACE /* SeatsTableViewCell.swift in Sources */,
+				2A5C09471A99C77900365A91 /* RoleNumberSettingViewController.swift in Sources */,
 				2AE3869C1A8BB305003CB8B7 /* AssignViewController.swift in Sources */,
 				2A15B4001A90DBDD002805B9 /* SCLAlertView.swift in Sources */,
 				2A3414B31A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift in Sources */,

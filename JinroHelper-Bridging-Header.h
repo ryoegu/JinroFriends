@@ -7,3 +7,4 @@
 //#import "CircleLayout.h"
 #import "BBTableView.h"
 #import "MBProgressHUD.h"
+#import "AFViewShaker.h"
