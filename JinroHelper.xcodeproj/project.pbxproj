@@ -47,6 +47,12 @@
 		2A67780D1A98D4AE0011DACE /* SeatsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A67780B1A98D4AE0011DACE /* SeatsTableViewCell.xib */; };
 		2A708AAB1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A708AAA1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift */; };
 		2A708AE21A8B0CF9003B1085 /* JinroHelper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A708AE01A8B0CF9003B1085 /* JinroHelper.xcdatamodeld */; };
+		2AD5B11D1A9A1267009930B5 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD5B11B1A9A1267009930B5 /* Icon-72.png */; };
+		2AD5B11E1A9A1267009930B5 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD5B11C1A9A1267009930B5 /* Icon-72@2x.png */; };
+		2AD5B1211A9A12C0009930B5 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD5B11F1A9A12C0009930B5 /* Icon-76.png */; };
+		2AD5B1221A9A12C0009930B5 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD5B1201A9A12C0009930B5 /* Icon-76@2x.png */; };
+		2AD5B1251A9A1308009930B5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD5B1231A9A1308009930B5 /* Icon.png */; };
+		2AD5B1261A9A1308009930B5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD5B1241A9A1308009930B5 /* Icon@2x.png */; };
 		2ADD538D1A98F45E00C6B3A7 /* FOT-BudoStd-L.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD538B1A98F45E00C6B3A7 /* FOT-BudoStd-L.otf */; };
 		2ADD538E1A98F45E00C6B3A7 /* JOURNAL.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD538C1A98F45E00C6B3A7 /* JOURNAL.TTF */; };
 		2ADD53901A98F47400C6B3A7 /* RoleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD538F1A98F47400C6B3A7 /* RoleData.swift */; };
@@ -125,6 +131,12 @@
 		2A67780B1A98D4AE0011DACE /* SeatsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeatsTableViewCell.xib; sourceTree = "<group>"; };
 		2A708AAA1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RolePurchaseTableViewController.swift; sourceTree = "<group>"; };
 		2A708AE11A8B0CF9003B1085 /* JinroHelper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JinroHelper.xcdatamodel; sourceTree = "<group>"; };
+		2AD5B11B1A9A1267009930B5 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		2AD5B11C1A9A1267009930B5 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		2AD5B11F1A9A12C0009930B5 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76.png"; path = "AppIcon.appiconset/Icon-76.png"; sourceTree = "<group>"; };
+		2AD5B1201A9A12C0009930B5 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76@2x.png"; path = "AppIcon.appiconset/Icon-76@2x.png"; sourceTree = "<group>"; };
+		2AD5B1231A9A1308009930B5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		2AD5B1241A9A1308009930B5 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		2ADD538B1A98F45E00C6B3A7 /* FOT-BudoStd-L.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FOT-BudoStd-L.otf"; sourceTree = "<group>"; };
 		2ADD538C1A98F45E00C6B3A7 /* JOURNAL.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = JOURNAL.TTF; sourceTree = "<group>"; };
 		2ADD538F1A98F47400C6B3A7 /* RoleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleData.swift; sourceTree = "<group>"; };
@@ -334,6 +346,12 @@
 		2ADD53911A99B87800C6B3A7 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				2AD5B1231A9A1308009930B5 /* Icon.png */,
+				2AD5B1241A9A1308009930B5 /* Icon@2x.png */,
+				2AD5B11F1A9A12C0009930B5 /* Icon-76.png */,
+				2AD5B1201A9A12C0009930B5 /* Icon-76@2x.png */,
+				2AD5B11B1A9A1267009930B5 /* Icon-72.png */,
+				2AD5B11C1A9A1267009930B5 /* Icon-72@2x.png */,
 				2ADD53941A99B87800C6B3A7 /* Icon-40.png */,
 				2ADD53951A99B87800C6B3A7 /* Icon-40@2x.png */,
 				2ADD53961A99B87800C6B3A7 /* Icon-40@3x.png */,
@@ -500,8 +518,13 @@
 				2ADD53AF1A99B87800C6B3A7 /* Icon-Small.png in Resources */,
 				2A5C09451A99C64700365A91 /* 第3勢力150.png in Resources */,
 				2A5C09431A99C64700365A91 /* 人狼150.png in Resources */,
+				2AD5B11D1A9A1267009930B5 /* Icon-72.png in Resources */,
 				2ADD53AC1A99B87800C6B3A7 /* Icon-60@3x.png in Resources */,
+				2AD5B1211A9A12C0009930B5 /* Icon-76.png in Resources */,
+				2AD5B1251A9A1308009930B5 /* Icon.png in Resources */,
 				2A5C094F1A99C9D200365A91 /* 第3勢力150s.png in Resources */,
+				2AD5B11E1A9A1267009930B5 /* Icon-72@2x.png in Resources */,
+				2AD5B1261A9A1308009930B5 /* Icon@2x.png in Resources */,
 				2ADD538D1A98F45E00C6B3A7 /* FOT-BudoStd-L.otf in Resources */,
 				2A5C094D1A99C9D200365A91 /* 人狼150s.png in Resources */,
 				2A5491EC1A5B7AAE0021D860 /* Images.xcassets in Resources */,
@@ -514,6 +537,7 @@
 				2ADD53B61A99B87800C6B3A7 /* Icon-Small-50@2x.png in Resources */,
 				2A5C09441A99C64700365A91 /* 村人150.png in Resources */,
 				2ADD53B11A99B87800C6B3A7 /* Icon-Small@3x.png in Resources */,
+				2AD5B1221A9A12C0009930B5 /* Icon-76@2x.png in Resources */,
 				2A3414B41A84F5DE0041DE12 /* RolePurchaseTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

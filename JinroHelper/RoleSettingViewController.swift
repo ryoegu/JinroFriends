@@ -33,6 +33,7 @@ class RoleSettingViewController: UIViewController,UICollectionViewDelegate,UICol
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         getDataFromCoreData()
+        roleCollectionView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,6 +49,15 @@ class RoleSettingViewController: UIViewController,UICollectionViewDelegate,UICol
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as RoleSettingCollectionViewCell
         cell.roleLabel!.text = roleArray[indexPath.row][2]
+        cell.numberLabel!.text = roleArray[indexPath.row][3]
+        switch roleArray[indexPath.row][1] {
+            case "1":
+            cell.roleLabel!.backgroundColor = RGBA(R: 102, G: 184, B: 115, A: 1.0)
+            case "2":
+            cell.roleLabel!.backgroundColor = RGBA(R: 230, G: 60, B: 53, A: 1.0)
+        default:
+            cell.roleLabel!.backgroundColor = RGBA(R: 88, G: 68, B: 109, A: 1.0)
+        }
         return cell
     }
     
@@ -55,9 +65,10 @@ class RoleSettingViewController: UIViewController,UICollectionViewDelegate,UICol
         return roleArray.count
     }
     
-    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let saveData:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         saveData.setInteger(indexPath.row, forKey: "currentIndex")
+        println(indexPath.row)
         performSegueWithIdentifier("toDetail", sender: nil)
     }
     

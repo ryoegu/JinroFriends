@@ -31,6 +31,8 @@ class RoleNumberSettingViewController: UIViewController {
         self.getDataFromCoreData()
         let saveData:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         index = saveData.integerForKey("currentIndex")
+        number = roleArray[index][3].toInt()!
+        changeNumber(number)
         self.showTeam()
         self.showRole()
         

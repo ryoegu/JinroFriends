@@ -20,15 +20,18 @@ class GameViewController: UIViewController,UITableViewDataSource,UITableViewDele
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.getWholeArrayFromUD()
-        self.makeTableView()
+        
         
         /*// 再生管理クラス生成
         manager = BackgroundMusicManager()
         // 管理クラスに再生／一時停止を伝達
         manager!.playOrPause()*/
-
-        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.getWholeArrayFromUD()
+        self.makeTableView()
     }
     func getWholeArrayFromUD(){
         wholeArray = []
