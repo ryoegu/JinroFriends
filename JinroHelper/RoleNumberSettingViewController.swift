@@ -16,14 +16,12 @@ class RoleNumberSettingViewController: UIViewController {
     @IBOutlet var explainTextView: UITextView!
     @IBOutlet var numberLabel: UILabel!
     @IBOutlet var roleImageView: UIImageView!
-    var number:Int!                 //人数
+    var number:Int = 0                 //人数
     var roleArray = [[String]]()    //もともとのArray
-    var index:Int!                  //id番号
+    var index:Int = 0                  //id番号
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        number = 0
-        index = 0
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -35,7 +33,6 @@ class RoleNumberSettingViewController: UIViewController {
         changeNumber(number)
         self.showTeam()
         self.showRole()
-        
     }
     
     override func viewWillDisappear(animated: Bool) {
