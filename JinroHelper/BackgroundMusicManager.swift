@@ -13,7 +13,6 @@ class BackgroundMusicManager: NSObject, AVAudioPlayerDelegate {
     // 初期化処理
     override init() {
         super.init()
-        
         // 音声ファイルパス取得
         let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("コールドフィッシュ", ofType: "mp3")!)
         
