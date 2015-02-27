@@ -119,6 +119,7 @@ class RoleSettingViewController: UIViewController,UICollectionViewDelegate,UICol
                 ])
             //}
         }
+        
     }
     
     // MARK: exchange RGBA Method

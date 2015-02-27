@@ -350,8 +350,21 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="mLP-6M-rwh">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="96" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="G9u-Jo-ABZ"/>
+                                    <constraint firstAttribute="width" constant="150" id="L5J-Pi-gRz"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="G9u-Jo-ABZ"/>
+                                        <exclude reference="L5J-Pi-gRz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="G9u-Jo-ABZ"/>
+                                        <include reference="L5J-Pi-gRz"/>
+                                    </mask>
                                 </variation>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="その役職の説明" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kde-jC-tca">
@@ -425,15 +438,32 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="役職名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FR-O6-ZEp" customClass="MKLabel" customModule="JinroHelper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="JLZ-Ph-mQf"/>
+                                    <constraint firstAttribute="height" constant="43" id="WQm-BD-r9p"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="174" y="164" width="136" height="43"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JLZ-Ph-mQf"/>
+                                        <exclude reference="WQm-BD-r9p"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="JLZ-Ph-mQf"/>
+                                        <include reference="WQm-BD-r9p"/>
+                                    </mask>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="◯◯陣営" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiL-gY-lL7" customClass="MKLabel" customModule="JinroHelper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="Hgp-nf-3Pz"/>
+                                    <constraint firstAttribute="height" constant="21" id="Lae-Fl-BAM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -442,12 +472,29 @@
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="174" y="135" width="119" height="21"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Hgp-nf-3Pz"/>
+                                        <exclude reference="Lae-Fl-BAM"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Hgp-nf-3Pz"/>
+                                        <include reference="Lae-Fl-BAM"/>
+                                    </mask>
                                 </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1FR-O6-ZEp" firstAttribute="leading" secondItem="mLP-6M-rwh" secondAttribute="trailing" constant="8" id="4A1-fr-ekh"/>
+                            <constraint firstItem="1FR-O6-ZEp" firstAttribute="top" secondItem="AiL-gY-lL7" secondAttribute="bottom" constant="8" id="4jd-Qx-5jl"/>
+                            <constraint firstItem="AiL-gY-lL7" firstAttribute="top" secondItem="rN0-Z5-Fk3" secondAttribute="bottom" constant="71" id="GpI-Rh-Xml"/>
+                            <constraint firstItem="mLP-6M-rwh" firstAttribute="leading" secondItem="MSk-nW-U9i" secondAttribute="leadingMargin" id="Z3N-jx-yxB"/>
+                            <constraint firstItem="AiL-gY-lL7" firstAttribute="leading" secondItem="mLP-6M-rwh" secondAttribute="trailing" constant="8" id="g1k-zt-hvQ"/>
+                            <constraint firstItem="mLP-6M-rwh" firstAttribute="top" secondItem="rN0-Z5-Fk3" secondAttribute="bottom" constant="32" id="xFY-Nj-noq"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="mLP-6M-rwh"/>
@@ -458,6 +505,14 @@
                                 <exclude reference="5L5-La-jZ2"/>
                                 <exclude reference="1FR-O6-ZEp"/>
                                 <exclude reference="AiL-gY-lL7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Z3N-jx-yxB"/>
+                                <exclude reference="xFY-Nj-noq"/>
+                                <exclude reference="GpI-Rh-Xml"/>
+                                <exclude reference="g1k-zt-hvQ"/>
+                                <exclude reference="4A1-fr-ekh"/>
+                                <exclude reference="4jd-Qx-5jl"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -470,6 +525,14 @@
                                 <include reference="5L5-La-jZ2"/>
                                 <include reference="1FR-O6-ZEp"/>
                                 <include reference="AiL-gY-lL7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Z3N-jx-yxB"/>
+                                <include reference="xFY-Nj-noq"/>
+                                <include reference="GpI-Rh-Xml"/>
+                                <include reference="g1k-zt-hvQ"/>
+                                <include reference="4A1-fr-ekh"/>
+                                <include reference="4jd-Qx-5jl"/>
                             </mask>
                         </variation>
                     </view>
