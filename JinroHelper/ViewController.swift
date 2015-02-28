@@ -100,6 +100,7 @@ class ViewController: UIViewController {
                 personObject.setValue(typeIntArray[i], forKey: "type")
                 personObject.setValue(validBoolArray[i], forKey: "valid")
 
+                
                 /* Error handling */
                 var error: NSError?
                 if !managedContext.save(&error) {
