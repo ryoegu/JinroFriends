@@ -83,13 +83,13 @@ class ViewController: UIViewController {
             /* Create new ManagedObject */
             let entity = NSEntityDescription.entityForName("RoleData", inManagedObjectContext: managedContext)
             /* Set the name attribute using key-value coding */
-            let roleStringArray:[String] = ["ゲームマスター","占い師","霊媒師","狩人","恋人","村人","富豪","人狼","狂人","多重人格","妖狐"]
-            let teamIntArray:[Int] = [0,1,1,1,1,1,1,2,2,2,3]
-            let typeIntArray:[Int] = [1,0,1,1,3,2,5,4,5,5,1]
-            let numberIntArray:[Int] = [0,1,1,1,0,1,0,1,0,0,0]
-            let validBoolArray:[Bool] = [true,true,true,true,false,true,false,true,false,false,false]
+            let roleStringArray:[String] = ["占い師","霊媒師","狩人","恋人","村人","富豪","人狼","狂人","多重人格","妖狐"]
+            let teamIntArray:[Int] = [1,1,1,1,1,1,2,2,2,3]
+            let typeIntArray:[Int] = [0,1,1,3,2,5,4,5,5,1]
+            let numberIntArray:[Int] = [1,1,1,0,1,0,1,0,0,0]
+            let validBoolArray:[Bool] = [true,true,true,false,true,false,true,false,false,false]
             
-            for var i=0;i<=10;i++ {
+            for var i=0;i<=9;i++ {
                 //setFirstData
                 let personObject = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
                 //deleteName(allDataArr[0])

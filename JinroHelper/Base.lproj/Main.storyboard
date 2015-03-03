@@ -328,6 +328,7 @@
                     <navigationItem key="navigationItem" title="人数設定" id="sBN-q3-M6N"/>
                     <connections>
                         <outlet property="roleCollectionView" destination="roC-Rj-Kbo" id="yXr-Je-IHu"/>
+                        <outlet property="startButton" destination="HHM-rw-jhG" id="aCd-DO-fJe"/>
                         <segue destination="iBc-91-GSS" kind="show" identifier="toAssignView" id="4Ma-9d-PaG"/>
                         <segue destination="L9H-VM-ONu" kind="show" identifier="toDetail" id="q1S-ln-Z2N"/>
                     </connections>
@@ -507,12 +508,12 @@
                                 <exclude reference="AiL-gY-lL7"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Z3N-jx-yxB"/>
-                                <exclude reference="xFY-Nj-noq"/>
-                                <exclude reference="GpI-Rh-Xml"/>
-                                <exclude reference="g1k-zt-hvQ"/>
                                 <exclude reference="4A1-fr-ekh"/>
                                 <exclude reference="4jd-Qx-5jl"/>
+                                <exclude reference="GpI-Rh-Xml"/>
+                                <exclude reference="g1k-zt-hvQ"/>
+                                <exclude reference="Z3N-jx-yxB"/>
+                                <exclude reference="xFY-Nj-noq"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -527,12 +528,12 @@
                                 <include reference="AiL-gY-lL7"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Z3N-jx-yxB"/>
-                                <include reference="xFY-Nj-noq"/>
-                                <include reference="GpI-Rh-Xml"/>
-                                <include reference="g1k-zt-hvQ"/>
                                 <include reference="4A1-fr-ekh"/>
                                 <include reference="4jd-Qx-5jl"/>
+                                <include reference="GpI-Rh-Xml"/>
+                                <include reference="g1k-zt-hvQ"/>
+                                <include reference="Z3N-jx-yxB"/>
+                                <include reference="xFY-Nj-noq"/>
                             </mask>
                         </variation>
                     </view>

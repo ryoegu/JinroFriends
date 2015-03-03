@@ -60,6 +60,7 @@ class AssignViewController: UIViewController {
         showPlayerNameInputAlert()
 
     }
+
     
     func showPlayerNameInputAlert() {
         let alert = SCLAlertView()

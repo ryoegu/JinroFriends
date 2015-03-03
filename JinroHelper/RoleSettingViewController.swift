@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 
 class RoleSettingViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+    @IBOutlet var startButton: MKButton!
     @IBOutlet var currentNumberLabel: UILabel!
     // ステータスバーの高さを取得
     let statusBarHeight: CGFloat = UIApplication.sharedApplication().statusBarFrame.height
@@ -34,6 +35,18 @@ class RoleSettingViewController: UIViewController,UICollectionViewDelegate,UICol
         super.viewWillAppear(animated)
         getDataFromCoreData()
         roleCollectionView.reloadData()
+        self.setButtonTextNumber()
+    }
+    
+    
+    func setButtonTextNumber() {
+        var wholeNumber:Int = 0
+        for var i=0;i<=9;i++ {
+            wholeNumber += roleArray[i][3].toInt()!
+        }
+        startButton.setTitle(String(format:"%d人でゲームをはじめる",wholeNumber), forState: UIControlState.Normal)
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
