@@ -19,6 +19,17 @@ class RoleNumberSettingViewController: UIViewController {
     var number:Int = 0                 //人数
     var roleArray = [[String]]()    //もともとのArray
     var index:Int = 0                  //id番号
+    
+    let explainArray = ["夜のターンで、誰か一人を指名し人狼かそうでないかを知ることができます。",
+    "昼のターンで処刑された人が人狼かそうでないかを知ることができます。",
+    "夜のターンで、人狼からの攻撃に対して守ることができます。",
+    "権限はなにもありませんが、お互いが同じチームであることを知ることができます。",
+    "村人に属します。権限はありません。",
+    "村人陣営ですが、得票は2倍になります。オンライン版のみ使用できる役職です。",
+    "夜のターンで、誰か一人を指名し処刑することができます。ただし、指名した人が狩人に守られた場合は殺されません。",
+    "狂っています。この村を狂わせて人狼チームを勝利に導きましょう！",
+    "占い師による判定では人狼と認定されます。しかし、所属は村人チームなので、村人チームが勝利したときに勝利します。",
+    "第3勢力です。この村に1人で来ました。1人で戦わなければなりません。人狼に殺されることはありません。ただし、占い師に占われると死んでしまいます。占い師や霊媒師には「村人」と判断されます。村人または人狼が勝った時に生きていれば妖狐の勝利となります。6人以上のゲームのときにいると便利です。"]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -123,7 +134,7 @@ class RoleNumberSettingViewController: UIViewController {
     
     func showRole() {
         roleLabel.text = roleArray[index][2]
-        //explainTextView.text = explainArray[index]
+        explainTextView.text = explainArray[index]
     }
     
     /*
