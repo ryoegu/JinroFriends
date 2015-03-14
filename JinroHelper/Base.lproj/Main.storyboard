@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -170,6 +170,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="goToVillageButton" destination="eub-1i-OJs" id="Vno-4j-Wq1"/>
                         <outlet property="makeVillageButton" destination="E96-X3-D5Z" id="lT6-CH-pV0"/>
@@ -351,21 +352,8 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="mLP-6M-rwh">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="G9u-Jo-ABZ"/>
-                                    <constraint firstAttribute="width" constant="150" id="L5J-Pi-gRz"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="G9u-Jo-ABZ"/>
-                                        <exclude reference="L5J-Pi-gRz"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="G9u-Jo-ABZ"/>
-                                        <include reference="L5J-Pi-gRz"/>
-                                    </mask>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="96" width="117" height="117"/>
                                 </variation>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="その役職の説明" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kde-jC-tca">
@@ -375,13 +363,13 @@
                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="269" width="368" height="243"/>
+                                    <rect key="frame" x="25" y="261" width="270" height="223"/>
                                 </variation>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="人狼150s.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nau-Fb-Jf5">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="26" y="106" width="130" height="130"/>
+                                    <rect key="frame" x="26" y="106" width="101" height="101"/>
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQ3-RD-lUO">
@@ -390,7 +378,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="135" y="520" width="130" height="53"/>
+                                    <rect key="frame" x="95" y="500" width="130" height="53"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6W-0A-Qtg" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
@@ -409,7 +397,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundAniEnabled" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="273" y="527" width="40" height="40"/>
+                                    <rect key="frame" x="233" y="507" width="40" height="40"/>
                                 </variation>
                                 <connections>
                                     <action selector="plus:" destination="L9H-VM-ONu" eventType="touchUpInside" id="GLh-sc-zcT"/>
@@ -431,7 +419,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundAniEnabled" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="87" y="527" width="40" height="40"/>
+                                    <rect key="frame" x="47" y="507" width="40" height="40"/>
                                 </variation>
                                 <connections>
                                     <action selector="minus:" destination="L9H-VM-ONu" eventType="touchUpInside" id="gTI-L8-tih"/>
@@ -439,32 +427,15 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="役職名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FR-O6-ZEp" customClass="MKLabel" customModule="JinroHelper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="136" id="JLZ-Ph-mQf"/>
-                                    <constraint firstAttribute="height" constant="43" id="WQm-BD-r9p"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="JLZ-Ph-mQf"/>
-                                        <exclude reference="WQm-BD-r9p"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="JLZ-Ph-mQf"/>
-                                        <include reference="WQm-BD-r9p"/>
-                                    </mask>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="141" y="156" width="136" height="43"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="◯◯陣営" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiL-gY-lL7" customClass="MKLabel" customModule="JinroHelper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="119" id="Hgp-nf-3Pz"/>
-                                    <constraint firstAttribute="height" constant="21" id="Lae-Fl-BAM"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -473,29 +444,12 @@
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Hgp-nf-3Pz"/>
-                                        <exclude reference="Lae-Fl-BAM"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="Hgp-nf-3Pz"/>
-                                        <include reference="Lae-Fl-BAM"/>
-                                    </mask>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="141" y="127" width="119" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="1FR-O6-ZEp" firstAttribute="leading" secondItem="mLP-6M-rwh" secondAttribute="trailing" constant="8" id="4A1-fr-ekh"/>
-                            <constraint firstItem="1FR-O6-ZEp" firstAttribute="top" secondItem="AiL-gY-lL7" secondAttribute="bottom" constant="8" id="4jd-Qx-5jl"/>
-                            <constraint firstItem="AiL-gY-lL7" firstAttribute="top" secondItem="rN0-Z5-Fk3" secondAttribute="bottom" constant="71" id="GpI-Rh-Xml"/>
-                            <constraint firstItem="mLP-6M-rwh" firstAttribute="leading" secondItem="MSk-nW-U9i" secondAttribute="leadingMargin" id="Z3N-jx-yxB"/>
-                            <constraint firstItem="AiL-gY-lL7" firstAttribute="leading" secondItem="mLP-6M-rwh" secondAttribute="trailing" constant="8" id="g1k-zt-hvQ"/>
-                            <constraint firstItem="mLP-6M-rwh" firstAttribute="top" secondItem="rN0-Z5-Fk3" secondAttribute="bottom" constant="32" id="xFY-Nj-noq"/>
-                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="mLP-6M-rwh"/>
@@ -506,14 +460,6 @@
                                 <exclude reference="5L5-La-jZ2"/>
                                 <exclude reference="1FR-O6-ZEp"/>
                                 <exclude reference="AiL-gY-lL7"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="4A1-fr-ekh"/>
-                                <exclude reference="4jd-Qx-5jl"/>
-                                <exclude reference="GpI-Rh-Xml"/>
-                                <exclude reference="g1k-zt-hvQ"/>
-                                <exclude reference="Z3N-jx-yxB"/>
-                                <exclude reference="xFY-Nj-noq"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -526,14 +472,6 @@
                                 <include reference="5L5-La-jZ2"/>
                                 <include reference="1FR-O6-ZEp"/>
                                 <include reference="AiL-gY-lL7"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="4A1-fr-ekh"/>
-                                <include reference="4jd-Qx-5jl"/>
-                                <include reference="GpI-Rh-Xml"/>
-                                <include reference="g1k-zt-hvQ"/>
-                                <include reference="Z3N-jx-yxB"/>
-                                <include reference="xFY-Nj-noq"/>
                             </mask>
                         </variation>
                     </view>
@@ -562,19 +500,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2n-bT-4f3">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.9269637315" green="1" blue="0.00053359762919999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="カードを引く">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="107" y="119" width="186" height="299"/>
-                                </variation>
-                                <connections>
-                                    <action selector="assignButtonTapped:" destination="iBc-91-GSS" eventType="touchUpInside" id="3Az-nJ-eQK"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16O-oX-NBj">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.50596859100000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -582,24 +507,37 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="92" y="488" width="217" height="41"/>
+                                    <rect key="frame" x="52" y="489" width="217" height="41"/>
                                 </variation>
                                 <connections>
                                     <action selector="nextButtonTapped:" destination="iBc-91-GSS" eventType="touchUpInside" id="nTs-bd-txN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2n-bT-4f3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.9269637315" green="1" blue="0.00053359762919999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="カードを引く">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="67" y="123" width="186" height="299"/>
+                                </variation>
+                                <connections>
+                                    <action selector="assignButtonTapped:" destination="iBc-91-GSS" eventType="touchUpInside" id="3Az-nJ-eQK"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="S2n-bT-4f3"/>
                                 <exclude reference="16O-oX-NBj"/>
+                                <exclude reference="S2n-bT-4f3"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="S2n-bT-4f3"/>
                                 <include reference="16O-oX-NBj"/>
+                                <include reference="S2n-bT-4f3"/>
                             </mask>
                         </variation>
                     </view>
@@ -614,7 +552,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THv-fH-epv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2677.5" y="-329"/>
+            <point key="canvasLocation" x="2659.5" y="-329"/>
         </scene>
         <!--Game Controller-->
         <scene sceneID="iIO-2a-Kas">
@@ -638,7 +576,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                    <rect key="frame" x="55" y="406" width="291" height="85"/>
+                                    <rect key="frame" x="50" y="351" width="221" height="85"/>
                                 </variation>
                             </textView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="v46-ah-5HQ" customClass="BBTableView">
@@ -679,7 +617,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="284" y="499" width="62" height="29"/>
+                                    <rect key="frame" x="209" y="455" width="62" height="29"/>
                                 </variation>
                             </button>
                         </subviews>
