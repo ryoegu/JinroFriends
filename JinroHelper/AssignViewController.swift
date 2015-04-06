@@ -74,6 +74,7 @@ class AssignViewController: UIViewController,UITextFieldDelegate {
             inputTextField = textField
             
         }
+        
         alert.addAction(
             UIAlertAction(
                 title: "カードを引く",
