@@ -56,7 +56,6 @@
 		2AD5B1221A9A12C0009930B5 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD5B1201A9A12C0009930B5 /* Icon-76@2x.png */; };
 		2AD5B1251A9A1308009930B5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD5B1231A9A1308009930B5 /* Icon.png */; };
 		2AD5B1261A9A1308009930B5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD5B1241A9A1308009930B5 /* Icon@2x.png */; };
-		2ADD538D1A98F45E00C6B3A7 /* FOT-BudoStd-L.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD538B1A98F45E00C6B3A7 /* FOT-BudoStd-L.otf */; };
 		2ADD538E1A98F45E00C6B3A7 /* JOURNAL.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD538C1A98F45E00C6B3A7 /* JOURNAL.TTF */; };
 		2ADD53901A98F47400C6B3A7 /* RoleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD538F1A98F47400C6B3A7 /* RoleData.swift */; };
 		2ADD53A81A99B87800C6B3A7 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD53941A99B87800C6B3A7 /* Icon-40.png */; };
@@ -88,6 +87,7 @@
 		2A0007241A90F1A7001A56B4 /* CircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayout.m; sourceTree = "<group>"; };
 		2A00072A1A90F5B7001A56B4 /* SeatsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeatsCollectionViewCell.swift; sourceTree = "<group>"; };
 		2A00072B1A90F5B7001A56B4 /* SeatsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeatsCollectionViewCell.xib; sourceTree = "<group>"; };
+		2A02A2DC1AD2C106003873F0 /* FOT-BudoStd-L.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FOT-BudoStd-L.otf"; sourceTree = "<group>"; };
 		2A15B3FF1A90DBDD002805B9 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 		2A2B98021A9060F800E5B953 /* MKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKButton.swift; sourceTree = "<group>"; };
 		2A2B98031A9060F800E5B953 /* MKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKColor.swift; sourceTree = "<group>"; };
@@ -143,7 +143,6 @@
 		2AD5B1201A9A12C0009930B5 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76@2x.png"; path = "AppIcon.appiconset/Icon-76@2x.png"; sourceTree = "<group>"; };
 		2AD5B1231A9A1308009930B5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		2AD5B1241A9A1308009930B5 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		2ADD538B1A98F45E00C6B3A7 /* FOT-BudoStd-L.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FOT-BudoStd-L.otf"; sourceTree = "<group>"; };
 		2ADD538C1A98F45E00C6B3A7 /* JOURNAL.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = JOURNAL.TTF; sourceTree = "<group>"; };
 		2ADD538F1A98F47400C6B3A7 /* RoleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleData.swift; sourceTree = "<group>"; };
 		2ADD53941A99B87800C6B3A7 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-40.png"; path = "AppIcon.appiconset/Icon-40.png"; sourceTree = "<group>"; };
@@ -354,7 +353,7 @@
 		2ADD538A1A98F45E00C6B3A7 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				2ADD538B1A98F45E00C6B3A7 /* FOT-BudoStd-L.otf */,
+				2A02A2DC1AD2C106003873F0 /* FOT-BudoStd-L.otf */,
 				2ADD538C1A98F45E00C6B3A7 /* JOURNAL.TTF */,
 			);
 			path = fonts;
@@ -542,7 +541,6 @@
 				2A5C094F1A99C9D200365A91 /* 第3勢力150s.png in Resources */,
 				2AD5B11E1A9A1267009930B5 /* Icon-72@2x.png in Resources */,
 				2AD5B1261A9A1308009930B5 /* Icon@2x.png in Resources */,
-				2ADD538D1A98F45E00C6B3A7 /* FOT-BudoStd-L.otf in Resources */,
 				2A5C094D1A99C9D200365A91 /* 人狼150s.png in Resources */,
 				2A5491EC1A5B7AAE0021D860 /* Images.xcassets in Resources */,
 				2ADD538E1A98F45E00C6B3A7 /* JOURNAL.TTF in Resources */,

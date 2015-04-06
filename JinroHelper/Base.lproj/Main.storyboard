@@ -330,7 +330,7 @@
                     <connections>
                         <outlet property="roleCollectionView" destination="roC-Rj-Kbo" id="yXr-Je-IHu"/>
                         <outlet property="startButton" destination="HHM-rw-jhG" id="aCd-DO-fJe"/>
-                        <segue destination="iBc-91-GSS" kind="show" identifier="toAssignView" id="4Ma-9d-PaG"/>
+                        <segue destination="iBc-91-GSS" kind="presentation" identifier="toAssignView" id="4Ma-9d-PaG"/>
                         <segue destination="L9H-VM-ONu" kind="show" identifier="toDetail" id="q1S-ln-Z2N"/>
                     </connections>
                 </viewController>
@@ -507,7 +507,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="52" y="489" width="217" height="41"/>
+                                    <rect key="frame" x="52" y="470" width="217" height="60"/>
                                 </variation>
                                 <connections>
                                     <action selector="nextButtonTapped:" destination="iBc-91-GSS" eventType="touchUpInside" id="nTs-bd-txN"/>
@@ -516,6 +516,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2n-bT-4f3">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.9269637315" green="1" blue="0.00053359762919999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="カードを引く">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -547,7 +548,7 @@
                     <connections>
                         <outlet property="assignButton" destination="S2n-bT-4f3" id="6k4-lv-PiH"/>
                         <outlet property="nextButton" destination="16O-oX-NBj" id="p51-6n-Ray"/>
-                        <segue destination="PUu-do-CbY" kind="show" identifier="toGameView" id="eH8-xw-tk2"/>
+                        <segue destination="PUu-do-CbY" kind="showDetail" identifier="toGameView" id="eH8-xw-tk2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THv-fH-epv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -566,19 +567,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Lo-8z-5zr">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">みなさん、目を閉じてください。
-この村に、どうやら人の顔をして何気なく暮らしている狼が紛れ込んでしまったようです。人狼と呼びます。
-人狼を殺さないと、みなさんは殺されてしまいます。人狼を見つけ出し、この村の勝利を勝ち取ってください。</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                    <rect key="frame" x="50" y="351" width="221" height="85"/>
-                                </variation>
-                            </textView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="v46-ah-5HQ" customClass="BBTableView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -605,21 +593,52 @@
                                     </mask>
                                 </variation>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtu-0Q-1ZM" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDE-Uv-pa1">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.50596859100000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="NEXT">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="司会用台詞集">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="209" y="455" width="62" height="29"/>
+                                    <rect key="frame" x="0.0" y="318" width="158" height="47"/>
                                 </variation>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oI8-td-4l3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ストップウォッチ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="162" y="318" width="158" height="47"/>
+                                </variation>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4R1-bq-4Nt">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="466" width="220" height="31"/>
+                                </variation>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9T-K8-n6B">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="START">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="416" width="59" height="43.5"/>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-Cq-9HW">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="249" y="452" width="55" height="44"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -629,9 +648,12 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="6Lo-8z-5zr"/>
                                 <exclude reference="v46-ah-5HQ"/>
-                                <exclude reference="qtu-0Q-1ZM"/>
+                                <exclude reference="aDE-Uv-pa1"/>
+                                <exclude reference="oI8-td-4l3"/>
+                                <exclude reference="4R1-bq-4Nt"/>
+                                <exclude reference="q9T-K8-n6B"/>
+                                <exclude reference="hUa-Cq-9HW"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="V1w-AZ-DKJ"/>
@@ -641,9 +663,12 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="6Lo-8z-5zr"/>
                                 <include reference="v46-ah-5HQ"/>
-                                <include reference="qtu-0Q-1ZM"/>
+                                <include reference="aDE-Uv-pa1"/>
+                                <include reference="oI8-td-4l3"/>
+                                <include reference="4R1-bq-4Nt"/>
+                                <include reference="q9T-K8-n6B"/>
+                                <include reference="hUa-Cq-9HW"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="V1w-AZ-DKJ"/>

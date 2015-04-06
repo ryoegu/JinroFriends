@@ -80,9 +80,6 @@ class AssignViewController: UIViewController,UITextFieldDelegate {
                 title: "カードを引く",
                 style: UIAlertActionStyle.Default,
                 handler: {action in
-                    //ボタンが押された時の動作
-//                    NSLog("%@", textFieldInputValue)
-//                    self.assign(textFieldInputValue)
                     self.assign(inputTextField.text)
                 }
             )
@@ -131,8 +128,24 @@ class AssignViewController: UIViewController,UITextFieldDelegate {
             let saveData = NSUserDefaults.standardUserDefaults()
             saveData.setObject(shuffledAssignedArray, forKey: "ASSIGNED")
             saveData.synchronize()
-            SCLAlertView().showInfo("確認", subTitle: "ゲームをはじめます。\nこのiPhoneをゲームマスターに渡してください。", closeButtonTitle: "私はゲームマスターです")
-            self.performSegueWithIdentifier("toGameView", sender: nil)
+            //アラートを出す
+            let alert = UIAlertController(
+                title: "確認",
+                message: "このiPhoneをゲームマスター（司会）に渡してください。\nあなたは司会者ですか？",
+                preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(
+                UIAlertAction(
+                    title: "はい",
+                    style: UIAlertActionStyle.Default,
+                    handler: {action in
+                        //ボタンが押された時の動作
+                        self.performSegueWithIdentifier("toGameView", sender: nil)
+                    }
+                )
+            )
+            presentViewController(alert, animated: true, completion: nil)
+            
+            
         }else{
             self.showPlayerNameInputAlert()
         }
