@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imb-Pb-cw6" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
@@ -110,7 +110,7 @@
                                 </variation>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Imb-Pb-cw6" secondAttribute="bottom" constant="70" id="02F-NI-7KN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xZE-Qj-e43" secondAttribute="trailing" constant="24" id="02e-BR-TT1"/>
@@ -191,7 +191,7 @@
                         <viewControllerLayoutGuide type="bottom" id="r8S-hY-dDW"/>
                     </layoutGuides>
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="vRe-9Q-ZhG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHM-rw-jhG" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
@@ -347,7 +347,7 @@
                         <viewControllerLayoutGuide type="bottom" id="9fW-fC-Y5k"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MSk-nW-U9i">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="mLP-6M-rwh">
@@ -356,16 +356,6 @@
                                     <rect key="frame" x="16" y="96" width="117" height="117"/>
                                 </variation>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="その役職の説明" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kde-jC-tca">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="25" y="261" width="270" height="223"/>
-                                </variation>
-                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="人狼150s.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nau-Fb-Jf5">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -448,36 +438,46 @@
                                     <rect key="frame" x="141" y="127" width="119" height="21"/>
                                 </variation>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="その役職の説明" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmy-KA-D5I">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="241" width="270" height="232"/>
+                                </variation>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="mLP-6M-rwh"/>
-                                <exclude reference="kde-jC-tca"/>
                                 <exclude reference="Nau-Fb-Jf5"/>
                                 <exclude reference="eQ3-RD-lUO"/>
                                 <exclude reference="d6W-0A-Qtg"/>
                                 <exclude reference="5L5-La-jZ2"/>
                                 <exclude reference="1FR-O6-ZEp"/>
                                 <exclude reference="AiL-gY-lL7"/>
+                                <exclude reference="fmy-KA-D5I"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="mLP-6M-rwh"/>
-                                <include reference="kde-jC-tca"/>
                                 <include reference="Nau-Fb-Jf5"/>
                                 <include reference="eQ3-RD-lUO"/>
                                 <include reference="d6W-0A-Qtg"/>
                                 <include reference="5L5-La-jZ2"/>
                                 <include reference="1FR-O6-ZEp"/>
                                 <include reference="AiL-gY-lL7"/>
+                                <include reference="fmy-KA-D5I"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="役職設定" id="t6X-xN-hji"/>
                     <connections>
-                        <outlet property="explainTextView" destination="kde-jC-tca" id="NUm-tj-fSe"/>
+                        <outlet property="explainTextView" destination="fmy-KA-D5I" id="wyu-6z-OUw"/>
                         <outlet property="numberLabel" destination="eQ3-RD-lUO" id="vrp-do-DX1"/>
                         <outlet property="roleImageView" destination="Nau-Fb-Jf5" id="Dxz-gv-SRh"/>
                         <outlet property="roleLabel" destination="1FR-O6-ZEp" id="Plt-l0-PN6"/>
@@ -497,7 +497,7 @@
                         <viewControllerLayoutGuide type="bottom" id="X84-Gy-IIM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8da-PK-js9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16O-oX-NBj">
@@ -527,7 +527,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="16O-oX-NBj"/>
@@ -563,7 +563,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dj8-g7-Nbg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="701-uq-fGm">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Lo-8z-5zr">
@@ -621,7 +621,7 @@
                                 </variation>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="v46-ah-5HQ" secondAttribute="trailing" constant="-16" id="V1w-AZ-DKJ"/>
                             <constraint firstItem="v46-ah-5HQ" firstAttribute="leading" secondItem="701-uq-fGm" secondAttribute="leadingMargin" constant="-16" id="lZ1-jb-RkB"/>
@@ -667,7 +667,7 @@
             <objects>
                 <tableViewController id="Ps7-XB-bXg" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="57" sectionHeaderHeight="22" sectionFooterHeight="22" id="nwi-ot-Elh">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>

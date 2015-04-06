@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class AssignViewController: UIViewController {
+class AssignViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet var explainLabel: UILabel!
     @IBOutlet var assignButton: UIButton!
@@ -63,12 +63,31 @@ class AssignViewController: UIViewController {
 
     
     func showPlayerNameInputAlert() {
-        let alert = SCLAlertView()
-        let text = alert.addTextField(title: "Your Name")
-        alert.addButton("カードを引く", action: {() ->Void in
-            self.assign(text.text)
-        })
-        alert.showEdit("名前を入力", subTitle: "プレーヤーの名前を入力してください。")
+        let alert = UIAlertController(
+            title: "名前を入力",
+            message: "プレーヤーの名前を入力してください。",
+            preferredStyle: UIAlertControllerStyle.Alert)
+        var inputTextField: UITextField!
+        alert.addTextFieldWithConfigurationHandler{textField in
+            //テキストフィールドのデリゲートになる
+            textField.delegate = self
+            inputTextField = textField
+            
+        }
+        alert.addAction(
+            UIAlertAction(
+                title: "カードを引く",
+                style: UIAlertActionStyle.Default,
+                handler: {action in
+                    //ボタンが押された時の動作
+//                    NSLog("%@", textFieldInputValue)
+//                    self.assign(textFieldInputValue)
+                    self.assign(inputTextField.text)
+                }
+            )
+        )
+        
+        presentViewController(alert, animated: true, completion: nil)
     }
 
     
