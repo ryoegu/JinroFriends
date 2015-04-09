@@ -60,7 +60,7 @@
 {
     self.backgroundColor = [UIColor blackColor];
     contentAlignment = eBBTableViewContentAlignmentRight;
-    self.enableInfiniteScrolling = YES;
+    self.enableInfiniteScrolling = NO;
     self.horizontalRadiusCorrection=1.0;
 }
 
