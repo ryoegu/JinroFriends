@@ -32,7 +32,7 @@ class GameViewController: UIViewController,UITableViewDataSource,UITableViewDele
     }
     func getWholeArrayFromUD(){
         wholeArray = []
-        wholeArray = saveData.objectForKey("ASSIGNED") as Array
+        wholeArray = saveData.objectForKey("ASSIGNED") as! Array
         println(wholeArray)
         cellCount = wholeArray.count
     }
@@ -61,17 +61,17 @@ class GameViewController: UIViewController,UITableViewDataSource,UITableViewDele
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("SeatsCell", forIndexPath: indexPath) as SeatsTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("SeatsCell", forIndexPath: indexPath) as! SeatsTableViewCell
         var wholeArrayWithIndexPath: (AnyObject) = wholeArray[indexPath.row]
-        NSLog("indexPath:%d %@",indexPath.row, wholeArrayWithIndexPath["player"]? as String)
+        NSLog("indexPath:%d %@",indexPath.row, wholeArrayWithIndexPath["player"] as! String)
         cell.nameLabel.text = wholeArrayWithIndexPath["player"] as? String
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var wholeArrayWithIndexPath: (AnyObject) = wholeArray[indexPath.row]
-        var playerName:String = wholeArrayWithIndexPath["player"]? as String
-        var playerRole:String = wholeArrayWithIndexPath["role"]? as String
+        var playerName:String = wholeArrayWithIndexPath["player"] as! String
+        var playerRole:String = wholeArrayWithIndexPath["role"] as! String
         
         println("Num: \(playerName)")
         

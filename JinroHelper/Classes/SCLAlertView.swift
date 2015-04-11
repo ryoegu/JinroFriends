@@ -316,7 +316,7 @@ class SCLAlertView: UIViewController {
     // showTitle(view, title, subTitle, duration, style)
     func showTitle(title: String, subTitle: String, duration: NSTimeInterval?, completeText: String?, style: SCLAlertViewStyle) -> SCLAlertViewResponder {
         view.alpha = 0
-		let rv = UIApplication.sharedApplication().keyWindow?.subviews.first as UIView
+		let rv = UIApplication.sharedApplication().keyWindow?.subviews.first as! UIView
 		rv.addSubview(view)
 		view.frame = rv.bounds
         baseView.frame = rv.bounds

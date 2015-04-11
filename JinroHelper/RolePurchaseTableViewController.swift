@@ -43,7 +43,7 @@ class RolePurchaseTableViewController: UITableViewController {
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("purchaseCell", forIndexPath: indexPath) as RolePurchaseTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("purchaseCell", forIndexPath: indexPath) as! RolePurchaseTableViewCell
 
         // Configure the cell...
         

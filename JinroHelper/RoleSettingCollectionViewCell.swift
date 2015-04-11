@@ -9,6 +9,6 @@
 import UIKit
 
 class RoleSettingCollectionViewCell: UICollectionViewCell {
-    @IBOutlet var roleLabel: MKLabel!
+    @IBOutlet var roleLabel: UILabel!
     @IBOutlet var numberLabel: UILabel!
 }

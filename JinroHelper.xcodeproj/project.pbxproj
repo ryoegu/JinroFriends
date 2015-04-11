@@ -10,13 +10,9 @@
 		2A0007251A90F1A7001A56B4 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0007241A90F1A7001A56B4 /* CircleLayout.m */; };
 		2A00072C1A90F5B7001A56B4 /* SeatsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A00072A1A90F5B7001A56B4 /* SeatsCollectionViewCell.swift */; };
 		2A00072D1A90F5B7001A56B4 /* SeatsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A00072B1A90F5B7001A56B4 /* SeatsCollectionViewCell.xib */; };
-		2A15B4001A90DBDD002805B9 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A15B3FF1A90DBDD002805B9 /* SCLAlertView.swift */; };
 		2A2B98091A9060F800E5B953 /* MKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98021A9060F800E5B953 /* MKButton.swift */; };
 		2A2B980A1A9060F800E5B953 /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98031A9060F800E5B953 /* MKColor.swift */; };
-		2A2B980B1A9060F800E5B953 /* MKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98041A9060F800E5B953 /* MKImageView.swift */; };
-		2A2B980C1A9060F800E5B953 /* MKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98051A9060F800E5B953 /* MKLabel.swift */; };
 		2A2B980D1A9060F800E5B953 /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98061A9060F800E5B953 /* MKLayer.swift */; };
-		2A2B980E1A9060F800E5B953 /* MKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98071A9060F800E5B953 /* MKTableViewCell.swift */; };
 		2A2B980F1A9060F800E5B953 /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98081A9060F800E5B953 /* MKTextField.swift */; };
 		2A2B98141A907BFC00E5B953 /* RoleSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98131A907BFC00E5B953 /* RoleSettingViewController.swift */; };
 		2A2B981C1A907CB200E5B953 /* OTPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B98171A907CB200E5B953 /* OTPageScrollView.m */; };
@@ -88,13 +84,9 @@
 		2A00072A1A90F5B7001A56B4 /* SeatsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeatsCollectionViewCell.swift; sourceTree = "<group>"; };
 		2A00072B1A90F5B7001A56B4 /* SeatsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeatsCollectionViewCell.xib; sourceTree = "<group>"; };
 		2A02A2DC1AD2C106003873F0 /* FOT-BudoStd-L.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FOT-BudoStd-L.otf"; sourceTree = "<group>"; };
-		2A15B3FF1A90DBDD002805B9 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 		2A2B98021A9060F800E5B953 /* MKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKButton.swift; sourceTree = "<group>"; };
 		2A2B98031A9060F800E5B953 /* MKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKColor.swift; sourceTree = "<group>"; };
-		2A2B98041A9060F800E5B953 /* MKImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKImageView.swift; sourceTree = "<group>"; };
-		2A2B98051A9060F800E5B953 /* MKLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKLabel.swift; sourceTree = "<group>"; };
 		2A2B98061A9060F800E5B953 /* MKLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKLayer.swift; sourceTree = "<group>"; };
-		2A2B98071A9060F800E5B953 /* MKTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTableViewCell.swift; sourceTree = "<group>"; };
 		2A2B98081A9060F800E5B953 /* MKTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTextField.swift; sourceTree = "<group>"; };
 		2A2B98131A907BFC00E5B953 /* RoleSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleSettingViewController.swift; sourceTree = "<group>"; };
 		2A2B98151A907CB100E5B953 /* JinroHelper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JinroHelper-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
@@ -189,15 +181,6 @@
 			name = CircleLayout;
 			sourceTree = "<group>";
 		};
-		2A15B3FE1A90DBDD002805B9 /* SCLAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				2A15B3FF1A90DBDD002805B9 /* SCLAlertView.swift */,
-			);
-			name = SCLAlertView;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		2A15B4011A90DBE5002805B9 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,7 +188,6 @@
 				2A6777FC1A98D1B70011DACE /* BBTableView */,
 				2A0007261A90F1AD001A56B4 /* CircleLayout */,
 				2A2B98011A9060F800E5B953 /* MaterialKit */,
-				2A15B3FE1A90DBDD002805B9 /* SCLAlertView */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -215,10 +197,7 @@
 			children = (
 				2A2B98021A9060F800E5B953 /* MKButton.swift */,
 				2A2B98031A9060F800E5B953 /* MKColor.swift */,
-				2A2B98041A9060F800E5B953 /* MKImageView.swift */,
-				2A2B98051A9060F800E5B953 /* MKLabel.swift */,
 				2A2B98061A9060F800E5B953 /* MKLayer.swift */,
-				2A2B98071A9060F800E5B953 /* MKTableViewCell.swift */,
 				2A2B98081A9060F800E5B953 /* MKTextField.swift */,
 			);
 			path = MaterialKit;
@@ -611,10 +590,8 @@
 				2A2B98141A907BFC00E5B953 /* RoleSettingViewController.swift in Sources */,
 				2A2B981C1A907CB200E5B953 /* OTPageScrollView.m in Sources */,
 				2ADD53901A98F47400C6B3A7 /* RoleData.swift in Sources */,
-				2A2B980E1A9060F800E5B953 /* MKTableViewCell.swift in Sources */,
 				2A0007251A90F1A7001A56B4 /* CircleLayout.m in Sources */,
 				2A00072C1A90F5B7001A56B4 /* SeatsCollectionViewCell.swift in Sources */,
-				2A2B980B1A9060F800E5B953 /* MKImageView.swift in Sources */,
 				2A2B98241A90CE6100E5B953 /* GameViewController.swift in Sources */,
 				2A2B980D1A9060F800E5B953 /* MKLayer.swift in Sources */,
 				2A5491E71A5B7AAE0021D860 /* ViewController.swift in Sources */,
@@ -622,7 +599,6 @@
 				2A708AE21A8B0CF9003B1085 /* JinroHelper.xcdatamodeld in Sources */,
 				2A6778071A98D1B70011DACE /* BBTableView.m in Sources */,
 				2A5491E51A5B7AAE0021D860 /* AppDelegate.swift in Sources */,
-				2A2B980C1A9060F800E5B953 /* MKLabel.swift in Sources */,
 				2A2B981D1A907CB200E5B953 /* OTPageView.m in Sources */,
 				2A708AAB1A8AFAB7003B1085 /* RolePurchaseTableViewController.swift in Sources */,
 				2A5C09511A99D44E00365A91 /* RoleSettingCollectionViewCell.swift in Sources */,
@@ -632,7 +608,6 @@
 				2A67780C1A98D4AE0011DACE /* SeatsTableViewCell.swift in Sources */,
 				2A5C09471A99C77900365A91 /* RoleNumberSettingViewController.swift in Sources */,
 				2AE3869C1A8BB305003CB8B7 /* AssignViewController.swift in Sources */,
-				2A15B4001A90DBDD002805B9 /* SCLAlertView.swift in Sources */,
 				2A3414B31A84F5DE0041DE12 /* RolePurchaseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

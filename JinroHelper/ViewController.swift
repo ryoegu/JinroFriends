@@ -77,7 +77,7 @@ class ViewController: UIViewController {
     
     func writeDataIfFirst() {
         /* Get ManagedObjectContext from AppDelegate */
-        let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext: NSManagedObjectContext = appDelegate.managedObjectContext!
         if numberOfDataFromEntity("RoleData", managedObjectContext: managedContext) == 0{
             /* Create new ManagedObject */

@@ -60,7 +60,7 @@ class RoleSettingViewController: UIViewController,UICollectionViewDelegate,UICol
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as RoleSettingCollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! RoleSettingCollectionViewCell
         cell.roleLabel!.text = roleArray[indexPath.row][2]
         cell.numberLabel!.text = roleArray[indexPath.row][3]
         switch roleArray[indexPath.row][1] {
@@ -107,13 +107,13 @@ class RoleSettingViewController: UIViewController,UICollectionViewDelegate,UICol
         //配列を初期化
         roleArray = []
         // CoreDataからデータを読み込んで配列memosに格納する
-        let appDel: AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let context: NSManagedObjectContext = appDel.managedObjectContext!
         let request: NSFetchRequest = NSFetchRequest(entityName: "RoleData")
         // 並び順をdateの、昇順としてみる
         request.sortDescriptors = [NSSortDescriptor(key: "id", ascending: true)]
         request.returnsObjectsAsFaults = false
-        var results = context.executeFetchRequest(request, error: nil) as [RoleData]!
+        var results = context.executeFetchRequest(request, error: nil) as! [RoleData]!
         for data in results {
             let id = data.id            //ID
             let team = data.team        //team（ゲームマスター：0, 村人陣営：1, 人狼陣営:2, 第三勢力：3）

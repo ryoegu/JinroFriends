@@ -108,7 +108,7 @@ class AssignViewController: UIViewController,UITextFieldDelegate {
         }
         
         var assignDictionary = ["player":"1"]
-        assignDictionary = currentDictionary as Dictionary
+        assignDictionary = currentDictionary as! Dictionary
         assignDictionary["player"] = playerName
         shuffledAssignedArray[currentNumber] = assignDictionary
         //println(shuffledAssignedArray[currentNumber])
@@ -166,13 +166,13 @@ class AssignViewController: UIViewController,UITextFieldDelegate {
         //配列を初期化
         roleArray = []
         // CoreDataからデータを読み込んで配列memosに格納する
-        let appDel: AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let context: NSManagedObjectContext = appDel.managedObjectContext!
         let request: NSFetchRequest = NSFetchRequest(entityName: "RoleData")
         // 並び順をdateの、昇順としてみる
         request.sortDescriptors = [NSSortDescriptor(key: "id", ascending: true)]
         request.returnsObjectsAsFaults = false
-        var results = context.executeFetchRequest(request, error: nil) as [RoleData]!
+        var results = context.executeFetchRequest(request, error: nil) as! [RoleData]!
         for data in results {
             let id = data.id            //ID
             let team = data.team        //team（ゲームマスター：0, 村人陣営：1, 人狼陣営:2, 第三勢力：3）
@@ -196,9 +196,9 @@ class AssignViewController: UIViewController,UITextFieldDelegate {
     // MARK: - Array Shuffle
     // 参考：http://stackoverflow.com/questions/24026510/how-do-i-shuffle-an-array-in-swift
     func shuffle<C: MutableCollectionType where C.Index == Int>(var list: C) -> C {
-        let count = countElements(list)
-        for i in 0..<(count - 1) {
-            let j = Int(arc4random_uniform(UInt32(count - i))) + i
+        let countNum = count(list)
+        for i in 0..<(countNum - 1) {
+            let j = Int(arc4random_uniform(UInt32(countNum - i))) + i
             swap(&list[i], &list[j])
         }
         return list
