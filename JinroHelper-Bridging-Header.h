@@ -6,5 +6,5 @@
 #import "OTPageView.h"
 //#import "CircleLayout.h"
 #import "BBTableView.h"
-#import "MBProgressHUD.h"
+#import "SVProgressHUD.h"
 #import "AFViewShaker.h"

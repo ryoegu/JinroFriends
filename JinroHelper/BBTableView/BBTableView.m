@@ -46,9 +46,9 @@
     int rows = 0;
     if( yOffset <0.0 )
     {
-         rows = fabsf(yOffset) / self.rowHeight;
+         rows = fabs(yOffset) / self.rowHeight;
     }
-    return fabsf(angle_gap * (1.0f -percentage)) + rows * angle_gap;
+    return fabs(angle_gap * (1.0f -percentage)) + rows * angle_gap;
 }
 
 - (NSIndexPath*)morphedIndexPathForIndexPath:(NSIndexPath*)oldIndexPath totalRows:(NSInteger)totalRows

@@ -29,6 +29,9 @@ class GameViewController: UIViewController,UITableViewDataSource,UITableViewDele
         super.viewWillAppear(animated)
         self.getWholeArrayFromUD()
         self.makeTableView()
+        
+        
+
     }
     func getWholeArrayFromUD(){
         wholeArray = []
@@ -75,6 +78,16 @@ class GameViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
         println("Num: \(playerName)")
         
+    }
+    
+    
+    
+    func dispatch_async_main(block: () -> ()) {
+        dispatch_async(dispatch_get_main_queue(), block)
+    }
+    
+    func dispatch_async_global(block: () -> ()) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
     }
     
 }

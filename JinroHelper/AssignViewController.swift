@@ -9,10 +9,9 @@
 import UIKit
 import CoreData
 
-class AssignViewController: UIViewController,UITextFieldDelegate {
+class AssignViewController: UIViewController,UITextFieldDelegate, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
-    @IBOutlet var explainLabel: UILabel!
-    @IBOutlet var assignButton: UIButton!
+    @IBOutlet var addPhotoButton: UIButton!
     @IBOutlet var nextButton: UIButton!
     var roleArray = [[String]]()
     //var assignDictionary:[NSDictionary] = [String,String]()
@@ -57,44 +56,56 @@ class AssignViewController: UIViewController,UITextFieldDelegate {
         }
         shuffledAssignedArray = shuffle(assignInfoArray)
         //println(shuffledAssignedArray)
-        showPlayerNameInputAlert()
+        //showPlayerNameInputAlert()
 
+    }
+    
+    @IBAction func addButtonPushed(){
+        self.openPhotoLibrary()
     }
 
     
-    func showPlayerNameInputAlert() {
-        let alert = UIAlertController(
-            title: "名前を入力",
-            message: "プレーヤーの名前を入力してください。",
-            preferredStyle: UIAlertControllerStyle.Alert)
-        var inputTextField: UITextField!
-        alert.addTextFieldWithConfigurationHandler{textField in
-            //テキストフィールドのデリゲートになる
-            textField.delegate = self
-            inputTextField = textField
+    
+    func openPhotoLibrary() {
+        if !UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
+            UIAlertView(title: "警告", message: "Photoライブラリにアクセス出来ません", delegate: nil, cancelButtonTitle: "OK").show()
+        } else {
+            var imagePickerController = UIImagePickerController()
             
+            // フォトライブラリから選択
+            imagePickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            
+            // 編集OFFに設定
+            // これをtrueにすると写真選択時、写真編集画面に移る
+            imagePickerController.allowsEditing = false
+            
+            // デリゲート設定
+            imagePickerController.delegate = self
+            
+            // 選択画面起動
+            self.presentViewController(imagePickerController,animated:true ,completion:nil)
         }
-        
-        alert.addAction(
-            UIAlertAction(
-                title: "カードを引く",
-                style: UIAlertActionStyle.Default,
-                handler: {action in
-                    self.assign(inputTextField.text)
-                }
-            )
-        )
-        
-        presentViewController(alert, animated: true, completion: nil)
     }
-
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        // イメージ表示
+        var image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        //mainImageView.image = image
+        addPhotoButton.setBackgroundImage(image, forState: UIControlState.Normal)
+        addPhotoButton.clipsToBounds=true
+        addPhotoButton.setTitle("", forState: UIControlState.Normal)
+        
+        
+        // 選択画面閉じる
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     
     @IBAction func assignButtonTapped(sender: UIButton) {
         //シャッフルボタン
     }
     
-    func assign(name:String){
+    /*func assign(name:String){
         //カードボタンの処理を書く
         var playerName = name
         let currentDictionary:AnyObject = shuffledAssignedArray[currentNumber]
@@ -115,8 +126,9 @@ class AssignViewController: UIViewController,UITextFieldDelegate {
         currentNumber += 1
         assignButton.setTitle(roleString, forState: UIControlState.Normal)
     }
+*/
 
-    @IBAction func nextButtonTapped(sender: UIButton) {
+    /*@IBAction func nextButtonTapped(sender: UIButton) {
         //nameTextField.enabled = true
         assignButton.setTitle("カードを引く", forState: UIControlState.Normal)
         //nameTextField.text=""
@@ -150,6 +162,7 @@ class AssignViewController: UIViewController,UITextFieldDelegate {
             self.showPlayerNameInputAlert()
         }
     }
+*/
     /*
     // MARK: - Navigation
 

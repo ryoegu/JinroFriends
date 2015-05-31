@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -19,168 +19,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imb-Pb-cw6" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="471" width="600" height="65"/>
-                                <color key="backgroundColor" red="1" green="0.98606308350000005" blue="0.76778029520000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="CiA-X9-Ca6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                <state key="normal" title="役職設定">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="CiA-X9-Ca6"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="CiA-X9-Ca6"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <segue destination="kzP-kE-u8h" kind="show" id="Ctw-FK-D68"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZE-Qj-e43" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="325" width="600" height="65"/>
                                 <color key="backgroundColor" red="0.9269637315" green="1" blue="0.00053359762919999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="pCk-Zg-oCG"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                <state key="normal" title="みんなで遊ぶ">
+                                <state key="normal" title="スタート">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="pCk-Zg-oCG"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="pCk-Zg-oCG"/>
-                                    </mask>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="41" y="405" width="239" height="65"/>
                                 </variation>
                                 <connections>
                                     <segue destination="Rlo-iW-dR9" kind="presentation" modalTransitionStyle="crossDissolve" id="Iu5-bY-eey"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E96-X3-D5Z" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="398" width="600" height="65"/>
-                                <color key="backgroundColor" red="1" green="0.98606308350000005" blue="0.76778029520000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="orC-Fx-5vB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                <state key="normal" title="村をつくる">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="orC-Fx-5vB"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="orC-Fx-5vB"/>
-                                    </mask>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eub-1i-OJs" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="471" width="600" height="65"/>
-                                <color key="backgroundColor" red="1" green="0.98606308350000005" blue="0.76778029520000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="0Ba-bg-rph"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                <state key="normal" title="村にはいる">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="0Ba-bg-rph"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="0Ba-bg-rph"/>
-                                    </mask>
-                                </variation>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Imb-Pb-cw6" secondAttribute="bottom" constant="70" id="02F-NI-7KN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xZE-Qj-e43" secondAttribute="trailing" constant="24" id="02e-BR-TT1"/>
-                            <constraint firstItem="Imb-Pb-cw6" firstAttribute="top" secondItem="eub-1i-OJs" secondAttribute="bottom" constant="8" id="186-TF-Yno"/>
-                            <constraint firstItem="eub-1i-OJs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="25" id="O3R-Xt-HkJ"/>
-                            <constraint firstItem="Imb-Pb-cw6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="25" id="Tk2-B5-umn"/>
-                            <constraint firstItem="xZE-Qj-e43" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="25" id="UfV-cv-s2O"/>
-                            <constraint firstItem="E96-X3-D5Z" firstAttribute="top" secondItem="xZE-Qj-e43" secondAttribute="bottom" constant="8" id="g5o-Qu-eOY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Imb-Pb-cw6" secondAttribute="trailing" constant="24" id="ibK-Ih-MGw"/>
-                            <constraint firstItem="E96-X3-D5Z" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="25" id="oBV-ne-08c"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eub-1i-OJs" secondAttribute="trailing" constant="24" id="tV9-Ez-M4s"/>
-                            <constraint firstItem="eub-1i-OJs" firstAttribute="top" secondItem="E96-X3-D5Z" secondAttribute="bottom" constant="8" id="u4X-Ku-1Zl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="E96-X3-D5Z" secondAttribute="trailing" constant="24" id="yYD-75-nNy"/>
-                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Imb-Pb-cw6"/>
                                 <exclude reference="xZE-Qj-e43"/>
-                                <exclude reference="E96-X3-D5Z"/>
-                                <exclude reference="eub-1i-OJs"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="02F-NI-7KN"/>
-                                <exclude reference="02e-BR-TT1"/>
-                                <exclude reference="UfV-cv-s2O"/>
-                                <exclude reference="g5o-Qu-eOY"/>
-                                <exclude reference="oBV-ne-08c"/>
-                                <exclude reference="yYD-75-nNy"/>
-                                <exclude reference="186-TF-Yno"/>
-                                <exclude reference="Tk2-B5-umn"/>
-                                <exclude reference="ibK-Ih-MGw"/>
-                                <exclude reference="O3R-Xt-HkJ"/>
-                                <exclude reference="tV9-Ez-M4s"/>
-                                <exclude reference="u4X-Ku-1Zl"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Imb-Pb-cw6"/>
                                 <include reference="xZE-Qj-e43"/>
-                                <include reference="E96-X3-D5Z"/>
-                                <include reference="eub-1i-OJs"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="02F-NI-7KN"/>
-                                <include reference="02e-BR-TT1"/>
-                                <include reference="UfV-cv-s2O"/>
-                                <include reference="g5o-Qu-eOY"/>
-                                <include reference="oBV-ne-08c"/>
-                                <include reference="yYD-75-nNy"/>
-                                <include reference="186-TF-Yno"/>
-                                <include reference="Tk2-B5-umn"/>
-                                <include reference="ibK-Ih-MGw"/>
-                                <include reference="O3R-Xt-HkJ"/>
-                                <include reference="tV9-Ez-M4s"/>
-                                <include reference="u4X-Ku-1Zl"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="goToVillageButton" destination="eub-1i-OJs" id="Vno-4j-Wq1"/>
-                        <outlet property="makeVillageButton" destination="E96-X3-D5Z" id="lT6-CH-pV0"/>
                         <outlet property="onePlayButton" destination="xZE-Qj-e43" id="h0O-sS-vNc"/>
-                        <outlet property="settingButton" destination="Imb-Pb-cw6" id="Mk6-4S-v49"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18" y="200"/>
+            <point key="canvasLocation" x="18" y="264"/>
         </scene>
         <!--人数設定-->
         <scene sceneID="Slb-Eq-uv2">
@@ -235,18 +108,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="役職名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diZ-Ki-mJH" customClass="MKLabel" customModule="JinroHelper" customModuleProvider="target">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="役職名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diZ-Ki-mJH">
                                                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                     <color key="backgroundColor" red="0.30196078430000001" green="0.53333333329999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <integer key="value" value="50"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
-                                                    </userDefinedRuntimeAttributes>
                                                     <variation key="widthClass=compact" fixedFrame="YES">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                     </variation>
@@ -415,7 +282,7 @@
                                     <action selector="minus:" destination="L9H-VM-ONu" eventType="touchUpInside" id="gTI-L8-tih"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="役職名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FR-O6-ZEp" customClass="MKLabel" customModule="JinroHelper" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="役職名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FR-O6-ZEp">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -424,16 +291,11 @@
                                     <rect key="frame" x="141" y="156" width="136" height="43"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="◯◯陣営" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiL-gY-lL7" customClass="MKLabel" customModule="JinroHelper" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="◯◯陣営" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiL-gY-lL7">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="aniDuration">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="141" y="127" width="119" height="21"/>
                                 </variation>
@@ -500,45 +362,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16O-oX-NBj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2m-SK-hDv" customClass="MKButton" customModule="JinroHelper" customModuleProvider="target">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.50596859100000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="タップして次の人にまわす">
+                                <state key="normal" title="Add Photo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="52" y="470" width="217" height="60"/>
+                                    <rect key="frame" x="105" y="94" width="100" height="100"/>
                                 </variation>
                                 <connections>
-                                    <action selector="nextButtonTapped:" destination="iBc-91-GSS" eventType="touchUpInside" id="nTs-bd-txN"/>
+                                    <action selector="addButtonPushed" destination="iBc-91-GSS" eventType="touchUpInside" id="DSl-1x-LhF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2n-bT-4f3">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.9269637315" green="1" blue="0.00053359762919999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="カードを引く">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1人目のプレーヤー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSb-dY-zVg">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="67" y="123" width="186" height="299"/>
+                                    <rect key="frame" x="73" y="45" width="175" height="21"/>
                                 </variation>
-                                <connections>
-                                    <action selector="assignButtonTapped:" destination="iBc-91-GSS" eventType="touchUpInside" id="3Az-nJ-eQK"/>
-                                </connections>
-                            </button>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0dy-fi-c0n" customClass="MKTextField" customModule="JinroHelper" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomBorderEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                        <color key="value" red="0.59261607240000003" green="1" blue="0.2164575158" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="70" y="234" width="170" height="35"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="16O-oX-NBj"/>
-                                <exclude reference="S2n-bT-4f3"/>
+                                <exclude reference="a2m-SK-hDv"/>
+                                <exclude reference="ZSb-dY-zVg"/>
+                                <exclude reference="0dy-fi-c0n"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="16O-oX-NBj"/>
-                                <include reference="S2n-bT-4f3"/>
+                                <include reference="a2m-SK-hDv"/>
+                                <include reference="ZSb-dY-zVg"/>
+                                <include reference="0dy-fi-c0n"/>
                             </mask>
                         </variation>
                     </view>
@@ -546,14 +425,74 @@
                         <barButtonItem key="backBarButtonItem" title="戻る" id="gDr-W1-Ihc"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="assignButton" destination="S2n-bT-4f3" id="6k4-lv-PiH"/>
-                        <outlet property="nextButton" destination="16O-oX-NBj" id="p51-6n-Ray"/>
-                        <segue destination="PUu-do-CbY" kind="showDetail" identifier="toGameView" id="eH8-xw-tk2"/>
+                        <outlet property="addPhotoButton" destination="a2m-SK-hDv" id="LEh-HD-nhY"/>
+                        <segue destination="dLq-NT-Lw8" kind="presentation" modalTransitionStyle="flipHorizontal" id="orI-rl-HvA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THv-fH-epv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2659.5" y="-329"/>
+            <point key="canvasLocation" x="2557.5" y="-329"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ixZ-Kz-wjE">
+            <objects>
+                <viewController id="dLq-NT-Lw8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yHJ-Vf-Bzd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zla-Xp-xg0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bkE-WN-KjH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたは" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVt-Cl-8mK">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="96" y="44" width="128" height="34"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="役職名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRM-Xc-99p">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="77" y="389" width="166" height="50"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjL-sc-0vA">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="次の人にまわす">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="108" y="471" width="105" height="30"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="aVt-Cl-8mK"/>
+                                <exclude reference="qRM-Xc-99p"/>
+                                <exclude reference="BjL-sc-0vA"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="aVt-Cl-8mK"/>
+                                <include reference="qRM-Xc-99p"/>
+                                <include reference="BjL-sc-0vA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uxB-7I-bzv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3283.5" y="-1005"/>
         </scene>
         <!--Game Controller-->
         <scene sceneID="iIO-2a-Kas">
@@ -564,7 +503,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dj8-g7-Nbg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="701-uq-fGm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="v46-ah-5HQ" customClass="BBTableView">
@@ -615,12 +554,6 @@
                                     <rect key="frame" x="162" y="318" width="158" height="47"/>
                                 </variation>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4R1-bq-4Nt">
-                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="14" y="466" width="220" height="31"/>
-                                </variation>
-                            </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9T-K8-n6B">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="START">
@@ -630,13 +563,19 @@
                                     <rect key="frame" x="27" y="416" width="59" height="43.5"/>
                                 </variation>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4R1-bq-4Nt">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="475" width="220" height="31"/>
+                                </variation>
+                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-Cq-9HW">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="249" y="452" width="55" height="44"/>
+                                    <rect key="frame" x="249" y="461" width="55" height="44"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -651,8 +590,8 @@
                                 <exclude reference="v46-ah-5HQ"/>
                                 <exclude reference="aDE-Uv-pa1"/>
                                 <exclude reference="oI8-td-4l3"/>
-                                <exclude reference="4R1-bq-4Nt"/>
                                 <exclude reference="q9T-K8-n6B"/>
+                                <exclude reference="4R1-bq-4Nt"/>
                                 <exclude reference="hUa-Cq-9HW"/>
                             </mask>
                             <mask key="constraints">
@@ -666,8 +605,8 @@
                                 <include reference="v46-ah-5HQ"/>
                                 <include reference="aDE-Uv-pa1"/>
                                 <include reference="oI8-td-4l3"/>
-                                <include reference="4R1-bq-4Nt"/>
                                 <include reference="q9T-K8-n6B"/>
+                                <include reference="4R1-bq-4Nt"/>
                                 <include reference="hUa-Cq-9HW"/>
                             </mask>
                             <mask key="constraints">
@@ -685,52 +624,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGA-b9-04I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3429" y="-329"/>
-        </scene>
-        <!--役職一覧-->
-        <scene sceneID="uHV-TU-xo4">
-            <objects>
-                <tableViewController id="Ps7-XB-bXg" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="57" sectionHeaderHeight="22" sectionFooterHeight="22" id="nwi-ot-Elh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="purchaseCell" rowHeight="57" id="Tdc-dW-ua4">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tdc-dW-ua4" id="JJe-Lo-ecg">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Ps7-XB-bXg" id="FSY-Sk-LG3"/>
-                            <outlet property="delegate" destination="Ps7-XB-bXg" id="3uX-9n-XnL"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="役職一覧" id="9SG-C2-dne"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iji-GT-z3I" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1848" y="1073"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="H90-Z4-kXn">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kzP-kE-u8h" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1T4-rf-aOi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Ps7-XB-bXg" kind="relationship" relationship="rootViewController" id="dJa-Ta-EGB"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="POW-M2-ixk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1030.5" y="1073"/>
+            <point key="canvasLocation" x="3343.5" y="-313"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c8r-Ud-tvE">
